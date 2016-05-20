@@ -11,7 +11,6 @@ mod "puppetlabs/ruby", '0.4.0'
 mod "puppetlabs/pe_gem", '0.2.0'
 mod "puppetlabs/apt", '2.2.2'
 mod "nanliu/staging", '1.0.3'
-mod "puppetlabs/azure", '1.0.2'
 
 
 # Modules from Git

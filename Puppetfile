@@ -6,7 +6,6 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/inifile",     '1.5.0'
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
-mod "puppetlabs/stdlib", '4.12.0'
 mod "puppetlabs/ruby", '0.4.0'
 mod "puppetlabs/pe_gem", '0.2.0'
 mod "puppetlabs/apt", '2.2.2'
@@ -22,3 +21,7 @@ mod "nanliu/staging", '1.0.3'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod 'stdlib',
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
+  :branch => '4.10.0'

@@ -8,7 +8,6 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/concat",      '2.1.0'
 mod "puppetlabs/ruby", '0.4.0'
 mod "puppetlabs/pe_gem", '0.2.0'
-mod "puppetlabs/apt", '2.2.2'
 mod "nanliu/staging", '1.0.3'
 
 

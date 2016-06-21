@@ -6,10 +6,6 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/inifile",     '1.5.0'
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
-mod "puppetlabs/ruby", '0.4.0'
-mod "puppetlabs/pe_gem", '0.2.0'
-mod "nanliu/staging", '1.0.3'
-
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

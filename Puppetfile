@@ -22,6 +22,6 @@ mod "nanliu/staging", '1.0.3'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mod 'stdlib',
-  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
-  :branch => '4.10.0'
+#mod 'stdlib',
+#  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
+#  :branch => '4.10.0'

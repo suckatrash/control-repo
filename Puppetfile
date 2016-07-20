@@ -10,7 +10,7 @@ mod "puppetlabs/ruby", '0.4.0'
 mod "puppetlabs/pe_gem", '0.2.0'
 mod "puppetlabs/apt", '2.2.2'
 mod "nanliu/staging", '1.0.3'
-
+mod "puppetlabs/aws", '1.4.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

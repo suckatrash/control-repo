@@ -9,7 +9,7 @@ puppet_enterprise::master::puppetserver::environment-class-cache-enabled: false
 
 puppet_enterprise::master::code_manager::sources:
   code: 
-    remote: "git://github.com/suckatrash/control-repo"
+    remote: "git@github.com:suckatrash/control-repo.git"
   hiera: 
-    remote: "git://github.com/suckatrash/hieradata_controlrepo"
+    remote: "git@github.com:suckatrash/hieradata_controlrepo.git"
     prefix: true

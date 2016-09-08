@@ -6,3 +6,10 @@ puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 0
 
 zabbix::repo::manage_repo: false
 puppet_enterprise::master::puppetserver::environment-class-cache-enabled: false
+
+puppet_enterprise::master::code_manager::sources:
+  code: 
+    remote: "git://github.com/suckatrash/control-repo"
+  hiera: 
+    remote: "git://github.com/suckatrash/hieradata_controlrepo"
+    prefix: true

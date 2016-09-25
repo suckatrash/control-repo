@@ -3,13 +3,7 @@ forge "http://forge.puppetlabs.com"
 # This is a test comment
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-#mod "puppetlabs/inifile",     '1.5.0'
-#mod "puppetlabs/stdlib",      '4.11.0'
-#mod "puppetlabs/concat",      '2.1.0'
-mod "puppetlabs/ruby", '0.4.0'
-mod "puppetlabs/puppetserver_gem", '0.2.0'
-mod "puppetlabs/apt", '2.2.2'
-mod "nanliu/staging", '1.0.3'
+
 mod "puppetlabs/aws", '1.4.0'
 mod "puppetlabs/puppet_agent", '1.2.0'
 mod "puppetlabs/inifile", '1.6.0'

@@ -10,6 +10,7 @@ mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs/stdlib", '4.12.0'
 mod "puppetlabs-transition", '0.1.0' 
 
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
@@ -23,3 +24,7 @@ mod "puppetlabs-transition", '0.1.0'
 #mod 'stdlib',
 #  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
 #  :branch => '4.10.0'
+
+mod 'puppetlabs-dsc',
+ :git => 'https://github.com/puppetlabs/puppetlabs-dsc',
+ :commit => '88c153bce2e4b7effa7da52893a603a6a1509caa' # 09/23/16

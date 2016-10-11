@@ -9,8 +9,6 @@ mod "puppetlabs/puppet_agent", '1.2.0'
 mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs/stdlib", '4.12.0'
 mod "puppetlabs-transition", '0.1.0' 
-mod "puppetlabs-tagmail", '2.1.1'
-
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

@@ -20,6 +20,6 @@ forge "http://forge.puppetlabs.com"
 #  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
 #  :branch => '4.10.0'
 
-mod 'puppetlabs-dsc',
- :git => 'https://github.com/puppetlabs/puppetlabs-dsc',
- :commit => '88c153bce2e4b7effa7da52893a603a6a1509caa' # 09/23/16
+#mod 'puppetlabs-dsc',
+# :git => 'https://github.com/puppetlabs/puppetlabs-dsc',
+# :commit => '88c153bce2e4b7effa7da52893a603a6a1509caa' # 09/23/16

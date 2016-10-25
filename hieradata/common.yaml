@@ -11,6 +11,8 @@ puppet_enterprise::master::code_manager::sources:
     invalid_branches: "correct"
 
 puppet_enterprise::master::code_manager::invalid_branches: "correct"
+
+puppet_enterprise::console_services::service_alert_timeout: "300"
 #  hiera: 
 #    remote: "git@github.com:suckatrash/hieradata_controlrepo.git"
 #    prefix: true

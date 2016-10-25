@@ -15,5 +15,7 @@ puppet_enterprise::master::code_manager::sources:
 
 puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
+
 ### Console service status check timeout 
 #puppet_enterprise::console_services::service_alert_timeout: "5000"

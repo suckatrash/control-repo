@@ -9,10 +9,11 @@ puppet_enterprise::master::code_manager::sources:
   code: 
     remote: "git@github.com:suckatrash/control-repo.git"
     invalid_branches: "correct"
-
-puppet_enterprise::master::code_manager::invalid_branches: "correct"
-
-puppet_enterprise::console_services::service_alert_timeout: "2"
 #  hiera: 
 #    remote: "git@github.com:suckatrash/hieradata_controlrepo.git"
 #    prefix: true
+
+puppet_enterprise::master::code_manager::invalid_branches: "correct"
+
+### Console service status check timeout 
+#puppet_enterprise::console_services::service_alert_timeout: "5000"

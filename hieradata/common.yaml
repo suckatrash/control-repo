@@ -8,7 +8,6 @@ message: "This node is using common data"
 puppet_enterprise::master::code_manager::sources:
   code: 
     remote: "git@github.com:suckatrash/control-repo.git"
-    invalid_branches: "correct"
 #  hiera: 
 #    remote: "git@github.com:suckatrash/hieradata_controlrepo.git"
 #    prefix: true

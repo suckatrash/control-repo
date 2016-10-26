@@ -7,7 +7,7 @@ forge "http://forge.puppetlabs.com"
 # mod "puppetlabs/aws", '1.4.0'
 
 ## puppet_agent and dependencies
-mod "puppetlabs/puppet_agent", '1.2.0'
+mod "puppetlabs/puppet_agent", '1.3.0'
 mod "puppetlabs/apt", '2.3.0'
 mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs-stdlib", '4.13.1'

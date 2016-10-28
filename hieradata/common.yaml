@@ -14,8 +14,9 @@ puppet_enterprise::master::code_manager::sources:
 
 puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
-puppet_enterprise::profile::master::java_args: 
-  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
+#### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
+#puppet_enterprise::profile::master::java_args: 
+#  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
 
 #puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 

@@ -13,6 +13,7 @@ mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs-stdlib", '4.13.1'
 mod "puppetlabs-transition", '0.1.0'
 mod 'biemond/orawls', '1.0.56'
+mod 'zack-r10k', '3.0.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

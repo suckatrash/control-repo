@@ -13,7 +13,18 @@ mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs-stdlib", '4.13.1'
 mod "puppetlabs-transition", '0.1.0'
 mod 'biemond/orawls', '1.0.56'
+
+## ticket testing
 mod 'zack-r10k', '3.0.0'
+mod 'croddy/make', '0.0.3' 
+mod 'puppetlabs/stdlib', '4.12.0' 
+mod 'puppetlabs/ruby', '0.0.2' 
+mod 'puppetlabs/gcc', '0.0.3' 
+mod 'puppetlabs/pe_gem', '0.1.1' 
+mod 'puppetlabs/inifile', '1.4.3' 
+mod 'puppetlabs/vcsrepo', '0.1.2' 
+mod 'puppetlabs/git', '0.0.3' 
+
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

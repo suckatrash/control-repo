@@ -9,7 +9,7 @@ forge "http://forge.puppetlabs.com"
 ## puppet_agent and dependencies
 mod "puppetlabs/puppet_agent", '1.3.0'
 mod "puppetlabs/apt", '2.3.0'
-#mod "puppetlabs/inifile", '1.6.0'
+mod "puppetlabs/inifile", '1.6.0'
 mod "puppetlabs-stdlib", '4.13.1'
 mod "puppetlabs-transition", '0.1.0'
 mod 'puppetlabs-ntp', '4.2.0'

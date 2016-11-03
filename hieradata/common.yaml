@@ -9,7 +9,7 @@ puppet_enterprise::master::code_manager::sources:
   code: 
     remote: "git@github.com:suckatrash/control-repo.git"
   other: 
-    remote: "git@github.com:suckatrash/hieradata_controlrepo.git"
+    remote: "git@github.com:suckatrash/control-repo.git"
     prefix: 'things'
 
 puppet_enterprise::master::code_manager::invalid_branches: "correct"

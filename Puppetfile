@@ -45,3 +45,7 @@ mod 'biemond/orawls', '1.0.56'
 #mod 'puppetlabs-dsc',
 # :git => 'https://github.com/puppetlabs/puppetlabs-dsc',
 # :commit => '88c153bce2e4b7effa7da52893a603a6a1509caa' # 09/23/16
+
+mod 'node_encrypt', 
+ :git => 'https://github.com/binford2k/binford2k-node_encrypt.git', 
+ :ref => 'v0.2.5'

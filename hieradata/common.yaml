@@ -12,7 +12,9 @@ puppet_enterprise::master::code_manager::sources:
     remote: "git@github.com:suckatrash/control-repo.git"
     prefix: 'things'
 
-pe_r10k::config::sources: ""
+pe_r10k::config::sources:
+  code:
+    remote: ""
 
 #puppet_enterprise::master::code_manager::deploy_pool_size: 3
 

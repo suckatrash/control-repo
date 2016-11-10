@@ -14,6 +14,12 @@ puppet_enterprise::master::code_manager::sources:
 
 #puppet_enterprise::master::code_manager::deploy_pool_size: 3
 
+puppet_enterprise::master::code_manager::timeouts_deploy: 31
+puppet_enterprise::master::code_manager::timeouts_fetch: 301
+puppet_enterprise::master::code_manager::timeouts_hook: 31
+puppet_enterprise::master::code_manager::timeouts_shutdown: 611
+puppet_enterprise::master::code_manager::timeouts_wait: 701
+
 puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
 

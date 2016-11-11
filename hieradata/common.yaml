@@ -12,33 +12,15 @@ puppet_enterprise::master::code_manager::sources:
     remote: "git@github.com:suckatrash/control-repo.git"
     prefix: 'things'
 
-#puppet_enterprise::master::code_manager::deploy_pool_size: 3
+##Code manager tuning
+#puppet_enterprise::master::code_manager::deploy_pool_size: 8
+#puppet_enterprise::master::code_manager::timeouts_deploy: 30
+#puppet_enterprise::master::code_manager::timeouts_fetch: 300
+#puppet_enterprise::master::code_manager::timeouts_hook: 30
+#puppet_enterprise::master::code_manager::timeouts_shutdown: 610
+#puppet_enterprise::master::code_manager::timeouts_wait: 700
 
-puppet_enterprise::master::code_manager::timeouts_deploy: 31
-puppet_enterprise::master::code_manager::timeouts_fetch: 301
-puppet_enterprise::master::code_manager::timeouts_hook: 31
-puppet_enterprise::master::code_manager::timeouts_shutdown: 611
-puppet_enterprise::master::code_manager::timeouts_wait: 701
-
-puppet_enterprise::master::code_manager::invalid_branches: "correct"
-
-
-##ntp test
-
-ntp_restrict:
-  - "-4 default kod notrap nomodify nopeer noquery" 
-  - "-6 default kod notrap nomodify nopeer noquery" 
-  - 127.0.0.1 
-  - "::1" 
-  - 10.0.100.41 
-  - 172.25.16.8
-  
-ntp_servers:
-  - 0.ubuntu.pool.ntp.org 
-  - 1.ubuntu.pool.ntp.org 
-  - 2.ubuntu.pool.ntp.org 
-  - 3.ubuntu.pool.ntp.org 
-  - time.nist.gov
+#puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 

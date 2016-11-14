@@ -23,7 +23,7 @@ puppet_enterprise::master::code_manager::forge_settings:
 #puppet_enterprise::master::code_manager::timeouts_shutdown: 610
 #puppet_enterprise::master::code_manager::timeouts_wait: 700
 
-#puppet_enterprise::master::code_manager::invalid_branches: "correct"
+puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 

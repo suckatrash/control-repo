@@ -13,7 +13,7 @@ puppet_enterprise::master::code_manager::sources:
     prefix: 'things'
     
 puppet_enterprise::master::code_manager::forge_settings:
-  baseurl: 'https://private-forge.mysite'
+  baseurl: 'https://forge.puppetlabs.com'
 
 ##Code manager tuning
 #puppet_enterprise::master::code_manager::deploy_pool_size: 8

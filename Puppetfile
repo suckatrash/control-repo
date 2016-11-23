@@ -6,6 +6,7 @@ forge "http://forge.puppetlabs.com"
 
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'puppetlabs-stdlib', '4.13.1'
+mod 'puppetlabs-inifile', '1.6.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

@@ -5,7 +5,7 @@ forge "http://forge.puppetlabs.com"
 # Versions should be updated to be the latest at the time you start
 
 # mod "puppetlabs/aws", '1.4.0'
-
+mod 'puppetlabs-ntp', '6.0.0'
 ## puppet_agent and dependencies
 #mod 'puppetlabs/git', '0.0.3' 
 

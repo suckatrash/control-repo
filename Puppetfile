@@ -4,12 +4,8 @@ forge "http://forge.puppetlabs.com"
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 
-# mod "puppetlabs/aws", '1.4.0'
 mod 'puppetlabs-ntp', '6.0.0'
-## puppet_agent and dependencies
-#mod 'puppetlabs/git', '0.0.3' 
-
-
+mod 'puppetlabs-stdlib', '4.13.1'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

@@ -12,9 +12,9 @@ puppet_enterprise::master::code_manager::sources:
     remote: "git@github.com:suckatrash/control-repo.git"
     prefix: 'things'
     
-puppet_enterprise::master::code_manager::forge_settings:
-  baseurl: 'https://forge.puppetlabs.com'
-  proxy: 'http://proxy.example.com:3228'
+#puppet_enterprise::master::code_manager::forge_settings:
+#  baseurl: 'https://forge.puppetlabs.com'
+#  proxy: 'http://proxy.example.com:3228'
 
 ##Code manager tuning
 #puppet_enterprise::master::code_manager::deploy_pool_size: 8

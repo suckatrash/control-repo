@@ -11,6 +11,9 @@ puppet_enterprise::master::code_manager::sources:
   other: 
     remote: "git@github.com:suckatrash/control-repo.git"
     prefix: 'things'
+  other2:
+    remote: "https://github.com/suckatrash/control-repo.git"
+    prefix: 'https'
     
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forge.puppetlabs.com'

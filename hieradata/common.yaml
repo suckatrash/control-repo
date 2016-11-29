@@ -8,9 +8,6 @@ message: "This node is using common data"
 puppet_enterprise::master::code_manager::sources:
   code: 
     remote: "git@github.com:suckatrash/control-repo.git"
-  other: 
-    remote: "git@github.com:suckatrash/control-repo.git"
-    prefix: 'things'
   other2:
     remote: "https://github.com/suckatrash/control-repo.git"
     prefix: 'https'
@@ -27,13 +24,8 @@ puppet_enterprise::master::code_manager::sources:
 #puppet_enterprise::master::code_manager::timeouts_shutdown: 610
 #puppet_enterprise::master::code_manager::timeouts_wait: 700
 
-puppet_enterprise::master::code_manager::authenticate_webhook: false
-puppet_enterprise::master::code_manager::invalid_branches: "correct"
-puppet_enterprise::master::code_manager::git_settings: 
-  provider: shellgit
-  private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa"
-
-
+#puppet_enterprise::master::code_manager::authenticate_webhook: false
+#puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 

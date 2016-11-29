@@ -31,6 +31,8 @@ puppet_enterprise::master::code_manager::authenticate_webhook: false
 puppet_enterprise::master::code_manager::invalid_branches: "correct"
 puppet_enterprise::master::code_manager::git_settings: 
   provider: shellgit
+  private-key: "/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa"
+
 
 
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log

@@ -18,7 +18,7 @@ mod 'puppetlabs-inifile', '1.6.0'
 #  :branch => 'docs_experiment'
 
 mod "stdlib", 
-:git => 'git@git.ap.org:puppet-external/puppetlabs-stdlib.git', 
+:git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git', 
 :tag => '4.11.0'
 
 #mod 'puppetlabs-dsc',

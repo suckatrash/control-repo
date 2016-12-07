@@ -5,7 +5,6 @@ forge "http://forge.puppetlabs.com"
 # Versions should be updated to be the latest at the time you start
 
 mod 'puppetlabs-ntp', '6.0.0'
-mod 'puppetlabs-stdlib', '4.13.1'
 mod 'puppetlabs-inifile', '1.6.0'
 
 # Modules from Git
@@ -18,9 +17,9 @@ mod 'puppetlabs-inifile', '1.6.0'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-#mod 'stdlib',
-#  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
-#  :branch => '4.10.0'
+mod "stdlib", 
+:git => 'git@git.ap.org:puppet-external/puppetlabs-stdlib.git', 
+:tag => '4.11.0'
 
 #mod 'puppetlabs-dsc',
 # :git => 'https://github.com/puppetlabs/puppetlabs-dsc',

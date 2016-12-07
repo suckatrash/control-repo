@@ -15,7 +15,7 @@ message: "This node is using common data"
 puppet_enterprise::master::code_manager::git_settings:
   provider: shellgit
   repositories: 
-    - remote: "git@github.com:suckatrash/control-repo.git"
+    - remote: "ssh://git@github.com:suckatrash/control-repo.git"
     - private-key: '/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa'
 
 

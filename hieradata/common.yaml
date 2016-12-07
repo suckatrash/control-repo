@@ -14,6 +14,7 @@ puppet_enterprise::master::code_manager::sources:
     
 puppet_enterprise::master::code_manager::git_settings:
   provider: shellgit
+  private_key: '/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa'
   
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forge.puppetlabs.com'

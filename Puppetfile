@@ -4,6 +4,8 @@ forge "http://forge.puppetlabs.com"
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 
+moduledir 'modules'
+
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'puppetlabs-inifile', '1.6.0'
 

@@ -1,4 +1,4 @@
-class role::generic {
+class role::generic_nix {
 
   include profile::base
   include profile::accounts

@@ -54,3 +54,11 @@ file { "${home}":
   require           =>  User[$name],
   }
 }
+
+file { "${home}/.vimrc":
+  ensure    => file,
+  owner     => 'name',
+  group     => 'name',
+  mode      => '0750',
+  content   => 'colorscheme elflord',
+}

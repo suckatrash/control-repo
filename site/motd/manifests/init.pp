@@ -5,6 +5,7 @@ file {'/etc/motd':
   owner => 'root',
   group => 'root',
   content => template('motd/motd.erb'),
+  #source => 'puppet:///modules/motd/motd',
 }
 
 }

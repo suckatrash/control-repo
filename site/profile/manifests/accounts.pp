@@ -9,8 +9,23 @@ sudo::conf { 'erik':
   content  => "erik ALL=(ALL) NOPASSWD: ALL",
 }
 
+ssh_authorized_key { 'root':
+  ensure => present,
+  user   => 'root',
+  type   => 'ssh-rsa',
+  key    => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCe/4aXayUh9xwDPTrm5v9/eJcnuml4bLjOMWiqq+4Qt20Q/Qpowtga+KxQ8nXruWfKpF53C0y6DDaB5yo94Vfa2snz6VWpTgESUyFXobeqLV1QabDPbWLQgWL1N0xryYb1rwVlwBmAdT1MAkTGzZfgAvmctnh7Ssi4nOwJn8J0KZ9D3e0P6N03FltdECkSrMU6H5kEFRAtOcvv1CcX5mCVyKsVGtt0qf8arRB4ANbiE4JNDvlKcCtaFSo8DYisSMtb1BUT8V0AXZno4OALea9cyP+YYi8sXzhihZFdmFOVNPUWNhXRZGDkHaSC/P6iDrnG1LjcvhtD3YKyzzRE2bHl',
+}
+
 accounts::user{ 'erik':
   email => 'erik@iamusingtheinternet.com',
 }
+
+accounts::user{ 'root':
+  email => 'erik.hansen@puppet.com',
+}
+
+#accounts::user{ 'jebus':
+#  email => 'jebus@christ.com',
+#}
 
 }

@@ -14,7 +14,7 @@ mod 'saz-sudo', '4.1.0'
 
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',
- :commit => 'bb55d801b61fde6c5caa47f7f504b0cfcab57d69' 
+ :commit => 'bb55d80' 
 
 # ===== Other examples =====
 # Modules from Git

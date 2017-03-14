@@ -57,8 +57,8 @@ file { "${home}":
 
 file { "${home}/.vimrc":
   ensure    => file,
-  owner     => 'name',
-  group     => 'name',
+  owner     => '$name',
+  group     => '$name',
   mode      => '0750',
   content   => 'colorscheme elflord',
 }

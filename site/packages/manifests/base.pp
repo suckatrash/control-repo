@@ -1,26 +1,8 @@
 class packages::base {
 
-package {'tree':
-  ensure => installed,
-}
+$oneswewant = ['tree','expect','telnet','zsh','git','vim']
 
-package {'expect':
-  ensure => installed,
-}
-
-package {'telnet':
-  ensure => installed,
-}
-
-package { 'zsh':
-  ensure => present,
-}
-
-package { 'git':
-  ensure => present,
-}
-
-package {'vim':
+package {$oneswewant:
   ensure => installed,
 }
 

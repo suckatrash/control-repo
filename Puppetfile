@@ -11,6 +11,7 @@ mod 'puppetlabs-puppet_agent', '1.3.1'
 mod 'puppetlabs-stdlib', '4.15.0'
 mod 'puppetlabs-transition', '0.1.0'
 mod 'saz-sudo', '4.1.0'
+mod 'puppetlabs-puppet_authorization', '0.2.0'
 
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',

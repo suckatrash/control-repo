@@ -40,3 +40,6 @@ puppet_enterprise::master::code_manager::sources:
 
 ### Console service status check timeout 
 #puppet_enterprise::console_services::service_alert_timeout: "5000"
+
+#workaround for https://tickets.puppetlabs.com/browse/PE-10166
+puppet_enterprise::profile::certificate_authority:client_whitelist: ['agent2.example.com','192.168.0.24']

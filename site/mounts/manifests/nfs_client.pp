@@ -1,4 +1,4 @@
-class nfs_client {
+class mounts::nfs_client {
 
   file { '/data':
     ensure => directory,

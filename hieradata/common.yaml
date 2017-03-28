@@ -45,3 +45,8 @@ puppet_enterprise::master::code_manager::sources:
 #puppet_enterprise::profile::certificate_authority::client_whitelist:
 #  - agent2.example.com
 #  - 192.168.0.24
+
+##test adding to file-sync API whitelist
+puppet_enterprise::master::file_sync::whitelisted_certnames:
+  - agent2.example.com
+  - 192.168.0.24

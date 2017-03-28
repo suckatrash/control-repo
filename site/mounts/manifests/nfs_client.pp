@@ -10,6 +10,7 @@ class mounts::nfs_client {
     fstype  => 'nfs',
     name    => '/data',
     atboot  => true,
+    options => 'rw',
     require => File['/data'],  
   }
   

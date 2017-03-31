@@ -20,6 +20,10 @@ mod 'puppetlabs-concat',
  :git    => 'https://github.com/puppetlabs/puppetlabs-concat',
  :commit => 'bb55d80' 
 
+mod 'puppetlabs-firewall',
+ :git    => 'https://github.com/puppetlabs/puppetlabs-firewall.git',
+ :commit => '6b75f01'
+
 # ===== Other examples =====
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

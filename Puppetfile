@@ -18,7 +18,7 @@ mod 'cprice404-grafanadash', '0.0.6'
 mod 'dwerder-graphite', '5.16.1'
 mod 'elasticsearch-elasticsearch', '0.3.2'
 mod 'gini-archive', '0.2.0'
-mod 'stahnma-epel', '0.0.6'
+mod 'stahnma-epel', '1.2.2'
 
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',

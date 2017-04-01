@@ -19,6 +19,10 @@ mod 'dwerder-graphite', '7.0.0'
 mod 'elasticsearch-elasticsearch', '0.16.2'
 mod 'gini-archive', '0.2.1'
 mod 'stahnma-epel', '1.2.2'
+mod 'puppetlabs-apt'
+mod 'richardc-datacat'
+mod 'puppetlabs-java'
+mod 'ceritsc-yum'
 
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',

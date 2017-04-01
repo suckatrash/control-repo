@@ -16,8 +16,8 @@ mod 'puppetlabs-hocon', '0.9.4'
 mod 'puppetlabs-stdlib', '4.16.0'
 mod 'cprice404-grafanadash', '0.0.6'
 mod 'dwerder-graphite', '7.0.0'
-mod 'elasticsearch-elasticsearch', '0.3.2'
-mod 'gini-archive', '0.2.0'
+mod 'elasticsearch-elasticsearch', '0.16.2'
+mod 'gini-archive', '0.2.1'
 mod 'stahnma-epel', '1.2.2'
 
 # Nfs server / client mounts dependency

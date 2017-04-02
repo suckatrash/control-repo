@@ -14,7 +14,7 @@ mod 'saz-sudo', '4.1.0'
 mod 'puppetlabs-puppet_authorization', '0.2.0'
 mod 'puppetlabs-hocon', '0.9.4'
 mod 'puppetlabs-stdlib', '4.16.0'
-mod 'cprice404-grafanadash'
+#mod 'cprice404-grafanadash'
 mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'
 mod 'gini-archive'
@@ -32,6 +32,9 @@ mod 'puppetlabs-concat',
 mod 'puppetlabs-firewall',
  :git    => 'https://github.com/puppetlabs/puppetlabs-firewall.git',
  :commit => '6b75f01'
+
+mod 'suckatrash-grafanadash',
+  :git => 'https://github.com/suckatrash/puppet-grafanadash.git',
 
 # ===== Other examples =====
 # Modules from Git

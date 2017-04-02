@@ -34,7 +34,7 @@ mod 'puppetlabs-firewall',
  :commit => '6b75f01'
 
 mod 'suckatrash-grafanadash',
-  :git => 'https://github.com/suckatrash/puppet-grafanadash.git',
+  :git => 'https://github.com/suckatrash/puppet-grafanadash.git'
 
 # ===== Other examples =====
 # Modules from Git

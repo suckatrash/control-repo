@@ -36,7 +36,7 @@ puppet_enterprise::master::code_manager::sources:
 #puppet_enterprise::profile::master::java_args: 
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
 
-#puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 
 ### Console service status check timeout 
 #puppet_enterprise::console_services::service_alert_timeout: "5000"
@@ -47,6 +47,6 @@ puppet_enterprise::master::code_manager::sources:
 #  - 192.168.0.24
 
 ##test adding to file-sync API whitelist
-puppet_enterprise::master::file_sync::whitelisted_certnames:
-  - agent2.example.com
-  - 192.168.0.24
+#puppet_enterprise::master::file_sync::whitelisted_certnames:
+#  - agent2.example.com
+#  - 192.168.0.24

@@ -38,6 +38,9 @@ puppet_enterprise::master::code_manager::sources:
 
 puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 
+### PuppetDB command processing (defaults to half the system CPU cores)
+#puppet_enterprise::puppetdb::command_processing_threads: <NUMBER of THREADS>
+
 ### Console service status check timeout 
 #puppet_enterprise::console_services::service_alert_timeout: "5000"
 

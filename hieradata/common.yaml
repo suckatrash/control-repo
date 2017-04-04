@@ -36,7 +36,7 @@ puppet_enterprise::master::code_manager::sources:
 #puppet_enterprise::profile::master::java_args: 
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
 
-puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
 
 ### PuppetDB command processing (defaults to half the system CPU cores)
 #puppet_enterprise::puppetdb::command_processing_threads: <NUMBER of THREADS>

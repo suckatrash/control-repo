@@ -35,6 +35,7 @@ mod 'puppetlabs-firewall',
 
 mod 'suckatrash-grafanadash',
   :git => 'https://github.com/suckatrash/puppet-grafanadash.git'
+  :branch => 'dev'
 
 # ===== Other examples =====
 # Modules from Git

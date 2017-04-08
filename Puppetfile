@@ -24,6 +24,8 @@ mod 'richardc-datacat'
 mod 'puppetlabs-java'
 mod 'ceritsc-yum'
 
+mod 'puppetlabs-mongodb', '0.17.0'
+
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',
  :git    => 'https://github.com/puppetlabs/puppetlabs-concat',

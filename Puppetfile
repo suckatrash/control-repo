@@ -25,6 +25,7 @@ mod 'puppetlabs-java'
 mod 'ceritsc-yum'
 
 mod 'puppetlabs-mongodb', '0.17.0'
+mod 'puppetlabs-apt', '2.4.0'
 
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',

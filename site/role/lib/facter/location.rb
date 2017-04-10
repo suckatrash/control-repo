@@ -1,5 +1,5 @@
 Facter.add('location') do
  setcode do
-  'cdc'
+  'ada'
  end
 end

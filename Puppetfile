@@ -27,6 +27,9 @@ mod 'ceritsc-yum'
 mod 'puppetlabs-mongodb', '0.17.0'
 mod 'puppetlabs-apt', '2.4.0'
 
+mod 'puppetlabs-mysql', '3.10.0'
+mod 'puppet-staging', '2.2.0'
+
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',
  :git    => 'https://github.com/puppetlabs/puppetlabs-concat',

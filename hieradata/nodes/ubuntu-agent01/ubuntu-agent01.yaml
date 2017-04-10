@@ -1,7 +1,0 @@
---- 
-mongodb::globals::bind_ip: '0.0.0.0' 
-mongodb::globals::manage_package_repo: false 
-mongodb::globals::server_package_name: 'mongodb-org' 
-mongodb::globals::service_name: 'mongod' 
-mongodb::server::config: '/etc/mongod.conf' 
-mongodb::server::replset: 'rs0'

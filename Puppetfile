@@ -43,6 +43,18 @@ mod 'suckatrash-grafanadash',
   :git => 'https://github.com/suckatrash/puppet-grafanadash.git',
   :branch => 'dev'
 
+mod 'test_module', 
+:git: 'git@github.com:suckatrash/modules.git',
+#:install_path: 'modules'
+
+mod 'test_customer_module', 
+:git: 'git@github.com:suckatrash/modules_customer.git',
+:install_path: 'modules_customer'
+
+mod 'test_customer_module_symlink', 
+:git: 'git@github.com:suckatrash/other.git',
+:install_path: 'other'
+
 # ===== Other examples =====
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

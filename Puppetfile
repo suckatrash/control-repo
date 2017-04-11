@@ -44,16 +44,7 @@ mod 'suckatrash-grafanadash',
   :branch => 'dev'
 
 mod 'test_module', 
-  :git => 'git@github.com:suckatrash/modules.git'
-  #:install_path: 'modules'
-
-mod 'test_customer_module', 
-  :git => 'git@github.com:suckatrash/modules_customer.git',
-  :install_path => 'modules_customer'
-
-mod 'test_customer_module_symlink', 
-  :git => 'git@github.com:suckatrash/other.git',
-  :install_path => 'other'
+  :git => 'https://github.com/suckatrash/test_module.git'
 
 # ===== Other examples =====
 # Modules from Git

@@ -52,6 +52,11 @@ mysql::server::override_options:
       cracklib_password_check: 'OFF'
       
 mysql::server::package_name: mariadb-server
+mysql::server::package_ensure: 10.1.14+maria-1~trusty
+mysql::server::service_name: mysql
 mysql::server::purge_conf_dir: true
-mysql::client::package_name: mariadb-client    
+mysql::client::package_name: mariadb-client
+mysql::client::package_ensure: 10.1.14+maria-1~trusty
+mysql::client::bindings_enable: true
+
 

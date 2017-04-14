@@ -20,7 +20,6 @@ mysql::server::override_options:
       slow-query-log-file: /var/lib/mysql/mysql-slow.log
       user: mysql
       default-storage-engine: InnoDB
-      socket: /var/run/mysqld/mysqld.sock
       pid-file: /var/lib/mysql/mysql.pid
       key-buffer-size: 32M
       myisam-recover: FORCE,BACKUP

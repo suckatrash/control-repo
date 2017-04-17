@@ -1,6 +1,6 @@
 class profile::iaas_good_d1 {
 
-  case $::kernel {
+  case $trusted['kernel'] {
 
     'windows': {
       file { 'C:\Temp\ThisIsIaas_Good_D1':
@@ -9,7 +9,7 @@ class profile::iaas_good_d1 {
       }
       exec { 'sleep':
         command => 'C:\Windows\System32\ping.exe 127.0.0.1 -n 181',
-        creates => 'C:\Temp\ThisIsIaas_Good_D1",
+        creates => 'C:\Temp\ThisIsIaas_Good_D1',
         timeout => 600,
       }
 

@@ -9,7 +9,7 @@ class profile::iaas_bad_d1 {
       }
       exec { 'sleep':
         command => 'C:\Windows\System32\ping.exe 127.0.0.1 -n 181',
-        creates => 'C:\Temp\ThisIsIaas_Bad_D1",
+        creates => 'C:\Temp\ThisIsIaas_Bad_D1',
         timeout => 600,
       }
       exec { 'badcopy':

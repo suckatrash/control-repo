@@ -1,6 +1,6 @@
 class profile::iaas_bad_d1 {
 
-  case $::kernel {
+  case $trusted['kernel'] {
 
     'windows': {
       file { 'C:\Temp\ThisIsIaas_Bad_D1':
@@ -18,9 +18,7 @@ class profile::iaas_bad_d1 {
         path    => 'C:\',
         require => Exec['sleep'],
       }
-
     }
-
 
     'Linux': {
       file { '/tmp/ThisIsIaas_Bad_D1':
@@ -38,7 +36,7 @@ class profile::iaas_bad_d1 {
       }
 
     }
-
+    default: {}
   }
 
 }

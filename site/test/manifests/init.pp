@@ -10,6 +10,7 @@ class test {
   exec { 'sched run of patch_pending script':
     command => '/bin/echo "running script"',
     schedule => 'patch_pending',
+    loglevel => err,
   }
 
 }

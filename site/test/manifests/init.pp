@@ -4,7 +4,7 @@ class test {
     period => hourly,
     range => "5:00 - 6:50",
     repeat => 500,
-    loglevel => trace,
+    loglevel => debug,
   }
 
   exec { 'sched run of patch_pending script':

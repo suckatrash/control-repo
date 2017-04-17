@@ -8,8 +8,9 @@ class profile::iaas_bad_d1 {
         require => Exec['sleep'],
       }
       exec { 'sleep':
-        command => 'C:\Windows\System32\ping.exe 127.0.0.1 -n 181',
+        command => 'ping 127.0.0.1 -n 181',
         creates => 'C:\Temp\ThisIsIaas_Bad_D1',
+        path    => 'C:\',
         timeout => 600,
       }
       exec { 'badcopy':

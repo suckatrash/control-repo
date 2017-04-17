@@ -13,7 +13,7 @@ class profile::iaas_bad_d1 {
         timeout => 600,
       }
       exec { 'badcopy':
-        command => 'C:\Windows\System32\copy.exe C:\Temp\BadFile1 C:\Temp\BadFile2',
+        command => 'copy C:\Temp\BadFile1 C:\Temp\BadFile2',
         require => Exec['sleep'],
       }
 

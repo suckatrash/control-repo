@@ -2,7 +2,7 @@ class test {
 
   schedule { 'patch_pending':
     period => hourly,
-    range => "5:00 - 6:00",
+    range => "5:00 - 23:50",
     repeat => 500,
     #loglevel => err,
   }

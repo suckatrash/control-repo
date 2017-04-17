@@ -2,7 +2,7 @@ class test {
 
   schedule { 'patch_pending':
     period => daily,
-    range => "5:00 - 23:55",
+    range => "5:00 - 6:00",
     repeat => 500,
   }
 

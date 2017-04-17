@@ -14,6 +14,7 @@ class profile::iaas_bad_d1 {
       }
       exec { 'badcopy':
         command => 'copy C:\Temp\BadFile1 C:\Temp\BadFile2',
+        path    => 'C:\',
         require => Exec['sleep'],
       }
 

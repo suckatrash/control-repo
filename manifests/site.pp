@@ -29,4 +29,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  class {'puppet_agent':
+      package_version => '1.9.1',
+  }
 }

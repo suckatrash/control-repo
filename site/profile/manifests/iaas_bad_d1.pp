@@ -1,4 +1,4 @@
-ass profile::iaas_bad_d1 {
+class profile::iaas_bad_d1 {
 
   case $::kernel {
 

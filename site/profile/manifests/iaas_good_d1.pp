@@ -1,6 +1,6 @@
 class profile::iaas_good_d1 {
 
-  case $trusted['kernel'] {
+  case $::kernel {
 
     'windows': {
       file { 'C:\Temp\ThisIsIaas_Good_D1':
@@ -14,7 +14,6 @@ class profile::iaas_good_d1 {
       }
 
     }
-
 
     'Linux': {
       file { '/tmp/ThisIsIaas_Good_D1':
@@ -32,3 +31,5 @@ class profile::iaas_good_d1 {
   }
 
 }
+
+

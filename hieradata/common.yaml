@@ -4,9 +4,9 @@ message: "This node is using common data"
 #Puppet Server Tuning
 #puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 0
 
-puppet_enterprise::master::jruby_environment_class_cache_enabled: true
-puppet_enterprise::master::jruby_environment_class_cache_enabled_ensure: absent
-puppet_enterprise::master::jruby_environment_class_cache_enabled_value: undef
+puppet_enterprise::master::puppetserver::jruby_environment_class_cache_enabled: true
+puppet_enterprise::master::puppetserver::jruby_environment_class_cache_enabled_ensure: absent
+puppet_enterprise::master::puppetserver::jruby_environment_class_cache_enabled_value: undef
 
 ### setup for external hieradata follows:
 puppet_enterprise::master::code_manager::sources:

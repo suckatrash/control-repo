@@ -30,6 +30,8 @@ mod 'puppetlabs-apt', '2.4.0'
 mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppet-staging', '2.2.0'
 
+mod 'npwalker-pe_metric_curl_cron_jobs', '4.1.0'
+
 # Nfs server / client mounts dependency
 mod 'puppetlabs-concat',
  :git    => 'https://github.com/puppetlabs/puppetlabs-concat',

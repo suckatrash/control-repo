@@ -13,7 +13,9 @@ mod 'puppetlabs-transition', '0.1.1'
 mod 'saz-sudo', '4.1.0'
 mod 'puppetlabs-puppet_authorization', '0.2.0'
 mod 'puppetlabs-hocon', '0.9.4'
-mod 'puppetlabs-stdlib', '4.16.0'
+#mod 'puppetlabs-stdlib', '4.16.0'
+mod 'puppetlabs-stdlib', '4.13.1'
+mod 'puppetlabs-concat', '2.2.0'
 #mod 'cprice404-grafanadash'
 mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'
@@ -34,9 +36,9 @@ mod 'npwalker-pe_metric_curl_cron_jobs', '4.1.0'
 mod 'puppetlabs-aws', '1.4.0'
 
 # Nfs server / client mounts dependency
-mod 'puppetlabs-concat',
- :git    => 'https://github.com/puppetlabs/puppetlabs-concat',
- :commit => 'bb55d80' 
+#mod 'puppetlabs-concat',
+# :git    => 'https://github.com/puppetlabs/puppetlabs-concat',
+# :commit => 'bb55d80' 
 
 mod 'puppetlabs-firewall',
  :git    => 'https://github.com/puppetlabs/puppetlabs-firewall.git',

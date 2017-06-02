@@ -16,7 +16,12 @@ mod 'puppetlabs-hocon', '0.9.4'
 #mod 'puppetlabs-stdlib', '4.16.0'
 mod 'puppetlabs-stdlib', '4.13.1'
 mod 'puppetlabs-concat', '2.2.0'
-#mod 'cprice404-grafanadash'
+
+### test monitor requirements
+mod 'puppet-grafana', '3.0.0'
+mod 'golja-influxdb', '4.0.0'
+mod 'datacentred-telegraf', '1.4.0'
+
 mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'
 mod 'gini-archive'

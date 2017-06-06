@@ -6,22 +6,22 @@ message: "This node is using common data"
 
 #puppet_enterprise::master::environment_timeout: '0'
 
-##PE Cipher list
-puppet_enterprise::master::puppetserver::cipher_suites:
-  - ECDHE-ECDSA-AES256-GCM-SHA384
-  - ECDHE-RSA-AES256-GCM-SHA384
-  - ECDHE-ECDSA-CHACHA20-POLY1305
-  - ECDHE-RSA-CHACHA20-POLY1305
-puppet_enterprise::profile::console::proxy::ssl_ciphers:
-  - ECDHE-ECDSA-AES256-GCM-SHA384
-  - ECDHE-RSA-AES256-GCM-SHA384
-  - ECDHE-ECDSA-CHACHA20-POLY1305
-  - ECDHE-RSA-CHACHA20-POLY1305
-puppet_enterprise::profile::database::ssl_ciphers:
-  - ECDHE-ECDSA-AES256-GCM-SHA384
-  - ECDHE-RSA-AES256-GCM-SHA384
-  - ECDHE-ECDSA-CHACHA20-POLY1305
-  - ECDHE-RSA-CHACHA20-POLY1305
+##PE Cipher list (breaks PE)
+#puppet_enterprise::master::puppetserver::cipher_suites:
+#  - ECDHE-ECDSA-AES256-GCM-SHA384
+#  - ECDHE-RSA-AES256-GCM-SHA384
+#  - ECDHE-ECDSA-CHACHA20-POLY1305
+#  - ECDHE-RSA-CHACHA20-POLY1305
+#puppet_enterprise::profile::console::proxy::ssl_ciphers:
+#  - ECDHE-ECDSA-AES256-GCM-SHA384
+#  - ECDHE-RSA-AES256-GCM-SHA384
+#  - ECDHE-ECDSA-CHACHA20-POLY1305
+#  - ECDHE-RSA-CHACHA20-POLY1305
+#puppet_enterprise::profile::database::ssl_ciphers:
+#  - ECDHE-ECDSA-AES256-GCM-SHA384
+#  - ECDHE-RSA-AES256-GCM-SHA384
+#  - ECDHE-ECDSA-CHACHA20-POLY1305
+#  - ECDHE-RSA-CHACHA20-POLY1305
 
 ### setup for external hieradata follows:
 puppet_enterprise::master::code_manager::sources:

@@ -6,6 +6,7 @@ message: "This node is using common data"
 
 #puppet_enterprise::master::environment_timeout: '0'
 
+### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forgeapi.puppet.com'
 #  forge_authorization: 'pe-license UHVwcGV0IExhYnM='

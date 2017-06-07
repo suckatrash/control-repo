@@ -6,9 +6,9 @@ message: "This node is using common data"
 
 #puppet_enterprise::master::environment_timeout: '0'
 
-puppet_enterprise::master::code_manager::forge_settings:
-  baseurl: 'https://private-forge.mysite'
-  forge_authorization: 'Basic czUyMzU4MDI6QUtDcDJXWFg3U0RHaUw5Y2F2UkFBaTgzaHJMVlJ4c2dQSFA2Q3lnRzlCSGt3SFlWVVh4bU1xM1A4REhRNGF4V053aVRrekhUNg=='
+#puppet_enterprise::master::code_manager::forge_settings:
+#  baseurl: 'https://private-forge.mysite'
+#  forge_authorization: 'Basic czUyMzU4MDI6QUtDcDJXWFg3U0RHaUw5Y2F2UkFBaTgzaHJMVlJ4c2dQSFA2Q3lnRzlCSGt3SFlWVVh4bU1xM1A4REhRNGF4V053aVRrekhUNg=='
 
 ### setup for external hieradata follows:
 puppet_enterprise::master::code_manager::sources:

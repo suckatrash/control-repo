@@ -6,8 +6,9 @@ message: "This node is using common data"
 
 #puppet_enterprise::master::environment_timeout: '0'
 
-puppet_enterprise::puppetdb::jetty_ini::ssl_protocols:
-  - "TLSv1.2"
+### This works for just puppetdb / port 8081
+#puppet_enterprise::puppetdb::jetty_ini::ssl_protocols:
+#  - "TLSv1.2"
 
 ### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
 #puppet_enterprise::master::code_manager::forge_settings:

@@ -2,7 +2,7 @@
 message: "This node is using common data"
 
 #Puppet Server Tuning
-#puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 0
+puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 1
 
 #puppet_enterprise::master::environment_timeout: '0'
 

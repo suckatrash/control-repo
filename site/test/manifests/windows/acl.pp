@@ -1,4 +1,4 @@
-class {'test::windows::acl':
+class test::windows::acl {
 
 acl { 'c:/windows/system32/xcopy.exe': 
   purge => 'true', 

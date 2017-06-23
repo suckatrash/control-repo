@@ -11,7 +11,7 @@ acl { 'c:/windows/system32/xcopy.exe':
 acl { 'c:/windows/system32/wbem/wmic.exe': 
   purge => 'true', 
   permissions => [ 
-    { identity => 'APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES', rights => ['full']}, 
+    { identity => 'APPLICATION\ PACKAGE\ AUTHORITY\\ALL\ APPLICATION\ PACKAGES', rights => ['full']}, 
   ], 
   inherit_parent_permissions => 'false', 
 }

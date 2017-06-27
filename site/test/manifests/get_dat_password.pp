@@ -1,4 +1,4 @@
-class get_dat_password {
+class test::get_dat_password {
 
 user {'user1':
   ensure => present,

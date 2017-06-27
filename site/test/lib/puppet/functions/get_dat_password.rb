@@ -4,7 +4,7 @@ Puppet::Functions.create_function('get_dat_password') do
     repeated_param 'Any', :args
   end  
 
-  def call(scope, *args)
+  def get_dat_password(scope, *args)
     manipulated_args = [scope] + args
     self.class.dispatcher.dispatch(self, scope, manipulated_args)
   end

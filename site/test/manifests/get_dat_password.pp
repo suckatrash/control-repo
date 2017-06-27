@@ -2,7 +2,7 @@ class test::get_dat_password {
 
 user {'user1':
   ensure => present,
-  password => pw_hash(get_dat_password('user1'),'SHA-256',salt),,
+  password => pw_hash(get_dat_password('user1'),'SHA-256',salt),
 }
 
 user {'user2':

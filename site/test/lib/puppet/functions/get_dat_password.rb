@@ -1,4 +1,4 @@
-Puppet::Functions.create_function(':get_dat_password') do  
+Puppet::Functions.create_function('get_dat_password') do  
   dispatch :getit do
     param 'String', :username
   end

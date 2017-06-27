@@ -1,7 +1,7 @@
 module Puppet::Parser::Functions
-  newfunction(:get_dat_password, :type => :rvalue) do |args|
+  newfunction(:get_dat_password, :type => :rvalue) do |arguments|
 
-  case user
+  case arguments[0]
     when "user1"
       return 'user1pass'
     when "user2"

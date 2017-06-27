@@ -1,5 +1,5 @@
 Puppet::Functions.create_function('get_dat_password') do  
-  dispatch :deprecation_gen do
+  dispatch :get_dat_password do
     param 'Any', :scope
     repeated_param 'Any', :args
   end  

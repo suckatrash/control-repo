@@ -2,14 +2,14 @@ class sqltest {
 
 sqlserver::config{ 'MSSQLSERVER':
   admin_user    => 'sa',
-  admin_pass    => 'Password1',
+  admin_pass    => 'p@ssW0rd!',
   admin_login_type => 'SQL_LOGIN',
 }
 
 sqlserver_instance{'MSSQLSERVER':
   source => 'D:',
   security_mode => 'SQL',
-  sa_pwd => 'Password1',
+  sa_pwd => 'p@ssW0rd!',
   features => ['SQLEngine'],
   sql_sysadmin_accounts => ['Administrator'],
   #as_svc_account => 'Administrator',

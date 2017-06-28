@@ -12,8 +12,8 @@ sqlserver_instance{'MSSQLSERVER':
   sa_pwd => 'p@ssW0rd!',
   features => ['SQLEngine'],
   sql_sysadmin_accounts => ['Administrator'],
-  #as_svc_account => 'Administrator',
-  #as_svc_password => 'Password1',
+  as_svc_account => 'Administrator',
+  as_svc_password => 'p@ssW0rd!',
 } ->
 
 sqlserver::login{'ERIK\ErikGroup':

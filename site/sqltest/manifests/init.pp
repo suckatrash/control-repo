@@ -7,7 +7,7 @@ sqlserver::config{ 'MSSQLSERVER':
 }
 
 sqlserver_instance{'MSSQLSERVER':
-  source => 'D:\',
+  source => 'D:',
   security_mode => 'SQL',
   sa_pwd => 'Password1',
   features => ['SQLEngine'],

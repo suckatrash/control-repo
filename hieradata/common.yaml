@@ -10,9 +10,9 @@ message: "This node is using common data"
 #puppet_enterprise::puppetdb::jetty_ini::ssl_protocols:
 #  - "TLSv1.2"
 
-puppet_enterprise::master::puppetserver::cipher_suites:
-  - "cipher1"
-  - "cipher2"
+#puppet_enterprise::master::puppetserver::cipher_suites:
+#  - "cipher1"
+#  - "cipher2"
 
 ### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
 #puppet_enterprise::master::code_manager::forge_settings:

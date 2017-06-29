@@ -1,4 +1,4 @@
-class utf_is_bad {
+class test::utf_is_bad {
 
   file {'/test':
     ensure => file,

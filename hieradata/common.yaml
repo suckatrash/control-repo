@@ -11,7 +11,8 @@ message: "This node is using common data"
 #  - "TLSv1.2"
 
 puppet_enterprise::master::puppetserver::cipher_suites:
-  - test
+  - "cipher1"
+  - "cipher2"
 
 ### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
 #puppet_enterprise::master::code_manager::forge_settings:

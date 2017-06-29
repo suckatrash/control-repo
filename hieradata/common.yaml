@@ -10,6 +10,15 @@ message: "This node is using common data"
 #puppet_enterprise::puppetdb::jetty_ini::ssl_protocols:
 #  - "TLSv1.2"
 
+puppet_enterprise::master::puppetserver::cipher_suites:
+  - "ECDHE-RSA-AES128-GCM-SHA256"
+  - "ECDHE-ECDSA-AES128-GCM-SHA256"
+  - "ECDHE-RSA-AES256-GCM-SHA384"
+  - "ECDHE-ECDSA-AES256-GCM-SHA384"
+  - "DHE-RSA-AES128-GCM-SHA256"
+  - "DHE-DSS-AES128-GCM-SHA256"
+  - "kEDH+AESGCM:ECDHE-RSA-AES128-SHA256"
+
 ### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forgeapi.puppet.com'

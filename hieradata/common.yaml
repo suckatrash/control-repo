@@ -53,7 +53,7 @@ puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
 #puppet_enterprise::puppetdb::command_processing_threads: <NUMBER of THREADS>
 
 ### Console service status check timeout 
-#puppet_enterprise::console_services::service_alert_timeout: "5000"
+#puppet_enterprise::console_services::service_alert_timeout: 5000
 
 ###workaround for https://tickets.puppetlabs.com/browse/PE-10166
 #puppet_enterprise::profile::certificate_authority::client_whitelist:

@@ -13,7 +13,7 @@ apache::vhost { 'test.example.com':
 
 file {'/var/www/html/index.html':
   ensure => file,
-  mode => 444,
+  mode => '444',
   owner => 'www-data',
   source => '/etc/motd',
 }

@@ -10,7 +10,7 @@ class { '::ntp':
 
 ##demo
 file { '/tmp/testfile':
-  ensure => exists,
+  ensure => file,
   content => 'this is a test file',
 }
 

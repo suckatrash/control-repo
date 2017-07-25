@@ -15,7 +15,7 @@ file {'/var/www/html/index.html':
   ensure => file,
   mode => '444',
   owner => 'apache',
-  source => '/etc/motd',
+  content => template('profile/index.html.erb'),
 }
 
 }

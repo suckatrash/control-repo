@@ -16,6 +16,21 @@ file {'/var/www/html/index.html':
   mode => '444',
   owner => 'apache',
   content => template('profile/index.html.erb'),
+}->
+
+file {'/var/www/html/css':
+  ensure => directory,
+  mode => '444',
+  owner => 'apache',
+}->
+
+file {'/var/www/html/css/style.css':
+  ensure => file,
+  mode => '444',
+  owner => 'apache',
+  content => 'div {
+    white-space: pre-wrap;
+  }',
 }
 
 }

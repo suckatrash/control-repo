@@ -7,8 +7,8 @@ class { 'apache':
 apache::vhost { 'test.example.com':
   port          => '80',
   docroot       => '/var/www/html',
-  docroot_owner => 'www-data',
-  docroot_group => 'www-data',
+  docroot_owner => 'apache',
+  docroot_group => 'apache',
 }
 
 file {'/var/www/html/index.html':

@@ -34,15 +34,16 @@ mod 'puppetlabs-apt'
 mod 'richardc-datacat'
 mod 'puppetlabs-java'
 mod 'ceritsc-yum'
+mod 'puppetlabs-apache', '1.11.0'
 
-mod 'puppetlabs-mongodb', '0.17.0'
+#mod 'puppetlabs-mongodb', '0.17.0'
 mod 'puppetlabs-apt', '2.4.0'
 
-mod 'puppetlabs-mysql', '3.10.0'
+#mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppet-staging', '2.2.0'
 
 mod 'npwalker-pe_metric_curl_cron_jobs', '4.1.0'
-mod 'puppetlabs-aws', '1.4.0'
+#mod 'puppetlabs-aws', '1.4.0'
 #mod 'puppetlabs-vsphere', '1.2.2'
 
 # Nfs server / client mounts dependency

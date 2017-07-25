@@ -14,7 +14,7 @@ apache::vhost { 'test.example.com':
 file {'/var/www/html/index.html':
   ensure => file,
   mode => '444',
-  owner => 'www-data',
+  owner => 'apache',
   source => '/etc/motd',
 }
 

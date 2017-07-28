@@ -25,7 +25,7 @@ accounts::user{ 'root':
 }
 
 accounts::user{ 'testuser':
-  email => 'erik.hansen@puppet.com',
+  email => 'erik.hansen@nothing.com',
 }
 
 #accounts::user{ 'jebus':

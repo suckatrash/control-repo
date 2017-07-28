@@ -24,6 +24,10 @@ accounts::user{ 'root':
   email => 'erik.hansen@puppet.com',
 }
 
+accounts::user{ 'testuser':
+  email => 'erik.hansen@puppet.com',
+}
+
 #accounts::user{ 'jebus':
 #  email => 'jebus@christ.com',
 #}

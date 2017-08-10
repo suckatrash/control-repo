@@ -83,4 +83,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PROMPT="$emoji[smiling_face_with_open_mouth] %{%f%b%k%}$(build_prompt) ";
+export PROMPT="%(?,$emoji[smiling_face_with_open_mouth],$emoji[pile_of_poo]) %{%f%b%k%}$(build_prompt) ";

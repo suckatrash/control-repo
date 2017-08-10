@@ -37,7 +37,7 @@ file { "${home}/.zshrc":
   source            => "puppet:///modules/accounts/zshrc",
   owner             =>  $name,
   group             =>  $name,
-  require           => FILE[${home}],
+  require           => FILE[$home],
 }
 
 file { "${home}":
@@ -46,7 +46,7 @@ file { "${home}":
   group             =>  $name,
   mode              =>  '0750',
   require           =>  User[$name],
-  }
+}
 
 
 file { "${home}/.vimrc":

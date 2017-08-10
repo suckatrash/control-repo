@@ -32,18 +32,12 @@ exec { "ohmyzsh::git clone ${name}":
   require => [Package['git'], Package['zsh'], User[$name]]
 }
 
-exec { "ohmyzsh::cp .zshrc ${name}":
-  creates => "${home}/.zshrc",
-  command => "/bin/cp ${home}/.oh-my-zsh/templates/zshrc.zsh-template ${home}/.zshrc",
-  user    => $name,
-  require => [Exec["ohmyzsh::git clone ${name}"], User[$name]]
-}
-
-file_line { "${name}-agnoster-install":
-  path    => "${home}/.zshrc",
-  line    => "ZSH_THEME=\"agnoster\"",
-  match   => '^ZSH_THEME',
-  #require => User[$name],
+file { "${home}/.zshrc":
+  ensure            => file,
+  source            => "puppet:///modules/accounts/zshrc",
+  owner             =>  $name,
+  group             =>  $name,
+  require           => FILE[${home}],
 }
 
 file { "${home}":

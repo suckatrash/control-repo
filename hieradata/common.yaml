@@ -23,6 +23,9 @@ puppet_enterprise::master::code_manager::sources:
 #    remote: "https://github.com/suckatrash/control-repo.git"
 #    prefix: 'https'
  
+puppet_enterprise::puppetdb::read_maximum_pool_size: 26
+puppet_enterprise::puppetdb::write_maximum_pool_size: 26
+ 
 ## Terrible non-working shellgit hack 
 #puppet_enterprise::master::code_manager::git_settings:
 #  provider: shellgit

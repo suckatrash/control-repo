@@ -1,7 +1,7 @@
 ---
 message: "This node is using common data"
 
-puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
+#puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 
 #Puppet Server Tuning
 #puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 1

@@ -1,6 +1,6 @@
 class test::type {
 
-javaks { 'test': 
+java_ks { 'test': 
   ensure => latest, 
   certificate => "/tmp/local/localhost.crt", 
   target => "/tmp/local/schufa_trust.jks", 

@@ -28,9 +28,9 @@ puppet_enterprise::master::code_manager::sources:
  
 ## puppetdb connection pool and processing thread example 
 ## 2x the PuppetDB command processing threads on the write side and 2x the Puppet Server JRuby pool on the read side.
-#puppet_enterprise::puppetdb::read_maximum_pool_size: 26
-#puppet_enterprise::puppetdb::write_maximum_pool_size: 26
-#puppet_enterprise::puppetdb::command_processing_threads: 4
+puppet_enterprise::puppetdb::read_maximum_pool_size: 20
+puppet_enterprise::puppetdb::write_maximum_pool_size: 20
+puppet_enterprise::puppetdb::command_processing_threads: 3
  
 ## Terrible non-working shellgit hack 
 #puppet_enterprise::master::code_manager::git_settings:

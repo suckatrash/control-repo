@@ -52,14 +52,21 @@ puppet_enterprise::puppetdb::write_maximum_pool_size: 26
 #puppet_enterprise::profile::master::java_args: 
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
 
-puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
-puppet_enterprise::profile::master::java_args:
-  'Xmx': '2049m'
-  'Xms': '2049m'
+####various tuning examples
+#puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
+#puppet_enterprise::profile::master::java_args:
+#  'Xmx': '2049m'
+#  'Xms': '2049m'
   
-puppet_enterprise::profile::puppetdb::java_args: 
-  "Xmx": "257m" 
-  "Xms": "257m"
+#puppet_enterprise::profile::puppetdb::java_args: 
+#  "Xmx": "257m" 
+#  "Xms": "257m"
+
+#puppet_enterprise::profile::amq::broker::heap_mb: 256
+#puppet_enterprise::profile::amq::broker::memory_usage: '201mb'
+
+#puppet_enterprise::profile::amq::hub::heap_mb: 256
+#puppet_enterprise::profile::amq::hub::memory_usage: '201mb'
 
 ### PuppetDB command processing (defaults to half the system CPU cores)
 #puppet_enterprise::puppetdb::command_processing_threads: <NUMBER of THREADS>

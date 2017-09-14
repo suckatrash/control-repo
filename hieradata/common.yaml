@@ -52,6 +52,9 @@ puppet_enterprise::puppetdb::command_processing_threads: 3
 #puppet_enterprise::master::code_manager::authenticate_webhook: false
 #puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
+## possible fix for https://tickets.puppetlabs.com/browse/PE-18235
+puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
+
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'

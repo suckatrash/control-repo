@@ -52,6 +52,8 @@ puppet_enterprise::puppetdb::command_processing_threads: 3
 #puppet_enterprise::master::code_manager::authenticate_webhook: false
 #puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
+puppet_enterprise::profile::console::classifier_synchronization_period: 0
+
 ## possible fix for https://tickets.puppetlabs.com/browse/PE-18235
 puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
 

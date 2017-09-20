@@ -1,5 +1,5 @@
 Facter.add('rundir') do
   setcode do
-    Facter::Core::Execution.exec('puppet agent --configprint rundir')
+    Puppet.settings['rundir']
   end
 end

@@ -77,3 +77,7 @@ mod 'test_module',
 #mod 'puppetlabs-dsc',
 # :git => 'https://github.com/puppetlabs/puppetlabs-dsc',
 # :commit => '88c153bce2e4b7effa7da52893a603a6a1509caa' # 09/23/16
+
+mod 'thias-nagios',
+  :git    => 'https://github.com/thias/puppet-nagios.git',
+  :branch => 'master'

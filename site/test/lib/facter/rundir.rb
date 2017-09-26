@@ -1,5 +1,5 @@
 Facter.add('rundir') do
   setcode do
-    Puppetaaaaaa.settings['rundir']
+    Puppet.settings['rundir']
   end
 end

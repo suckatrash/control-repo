@@ -63,6 +63,10 @@ mod 'suckatrash-grafanadash',
 mod 'test_module', 
   :git => 'https://github.com/suckatrash/test_module.git'
 
+mod 'pe_metrics_dashboard',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  :branch => 'master'
+
 # ===== Other examples =====
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

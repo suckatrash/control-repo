@@ -1,4 +1,4 @@
-class test::26999 {
+class test::t26999 {
 
 java_ks { 'wls_identity:truststore_wls': 
   ensure => latest, 

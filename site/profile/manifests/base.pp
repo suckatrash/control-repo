@@ -1,5 +1,17 @@
 class profile::base {
 
-  #the base profile should include component modules that will be on all nodes
+include motd
+include packages::base
+
+class { '::ntp':
+  servers => [ '0.pool.ntp.org', '1.pool.ntp.org', '2.pool.ntp.org', '3.pool.ntp.org' ],
+  restrict => [ '127.0.0.1' ],
+}
+
+##demo
+file { '/tmp/testfile':
+  ensure => file,
+  content => 'this is a test file',
+}
 
 }

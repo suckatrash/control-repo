@@ -20,7 +20,7 @@ mod 'puppetlabs-hocon', '0.9.4'
 #mod 'puppetlabs-stdlib', '4.16.0'
 mod 'puppetlabs-stdlib', '4.13.1'
 mod 'puppetlabs-concat', '2.2.0'
-mod 'puppetlabs-java_ks', '1.5.0'
+mod 'puppetlabs-java_ks', '1.6.0'
 
 ### test monitor requirements
 mod 'puppet-grafana', '3.0.0'
@@ -33,7 +33,6 @@ mod 'gini-archive'
 mod 'stahnma-epel'
 mod 'puppetlabs-apt'
 mod 'richardc-datacat'
-mod 'puppetlabs-java'
 mod 'ceritsc-yum'
 mod 'puppetlabs-apache', '1.11.0'
 

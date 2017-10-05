@@ -1,7 +1,11 @@
 class test::26999 {
 
-#file {'bad:name':
-#  ensure => file,
-#}
+java_ks { 'wls_identity:truststore_wls': 
+  ensure => latest, 
+  certificate => "$/tmp/local/localhost.crt", 
+  target => "/tmp/local/schufa_trust.jks", 
+  password => "password, 
+  trustcacerts => true, 
+}
 
 }

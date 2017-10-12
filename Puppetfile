@@ -64,7 +64,7 @@ mod 'test_module',
 
 mod 'pe_metrics_dashboard',
   :git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'dev'
+  :branch => 'telegraf'
 
 # ===== Other examples =====
 # Modules from Git

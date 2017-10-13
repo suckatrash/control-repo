@@ -1,4 +1,5 @@
 forge "http://forge.puppetlabs.com"
+##nothing
 
 ## Stuff I have in .site requires these:
 mod 'puppetlabs-ntp', '6.0.0'

@@ -1,0 +1,94 @@
+---
+message: "This node is using common data"
+
+#puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
+
+#Puppet Server Tuning
+#puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 1
+
+#puppet_enterprise::master::environment_timeout: '0'
+
+### This works for just puppetdb / port 8081
+#puppet_enterprise::puppetdb::jetty_ini::ssl_protocols:
+#  - "TLSv1.2"
+
+### This doesn't work https://tickets.puppetlabs.com/browse/CODEMGMT-1110
+#puppet_enterprise::master::code_manager::forge_settings:
+#  baseurl: 'https://forgeapi.puppet.com'
+#  forge_authorization: 'pe-license UHVwcGV0IExhYnM='
+
+### setup for external hieradata follows:
+puppet_enterprise::master::code_manager::sources:
+  code: 
+    remote: "git@github.com:suckatrash/control-repo.git"
+#  other2:
+#    remote: "https://github.com/suckatrash/control-repo.git"
+#    prefix: 'https'
+ 
+ 
+## puppetdb connection pool and processing thread example 
+## 2x the PuppetDB command processing threads on the write side and 2x the Puppet Server JRuby pool on the read side.
+puppet_enterprise::puppetdb::read_maximum_pool_size: 20
+puppet_enterprise::puppetdb::write_maximum_pool_size: 20
+puppet_enterprise::puppetdb::command_processing_threads: 3
+ 
+## Terrible non-working shellgit hack 
+#puppet_enterprise::master::code_manager::git_settings:
+#  provider: shellgit
+#  private_key: '/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa'
+  
+#puppet_enterprise::master::code_manager::forge_settings:
+#  baseurl: 'https://forge.puppetlabs.com'
+#  proxy: 'http://proxy.example.com:3228'
+
+##Code manager tuning
+#puppet_enterprise::master::code_manager::deploy_pool_size: 8
+#puppet_enterprise::master::code_manager::timeouts_deploy: 30
+#puppet_enterprise::master::code_manager::timeouts_fetch: 300
+#puppet_enterprise::master::code_manager::timeouts_hook: 30
+#puppet_enterprise::master::code_manager::timeouts_shutdown: 610
+#puppet_enterprise::master::code_manager::timeouts_wait: 700
+
+#puppet_enterprise::master::code_manager::authenticate_webhook: false
+#puppet_enterprise::master::code_manager::invalid_branches: "correct"
+
+puppet_enterprise::profile::console::classifier_synchronization_period: 0
+
+## possible fix for https://tickets.puppetlabs.com/browse/PE-18235
+puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
+
+#### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
+#puppet_enterprise::profile::master::java_args: 
+#  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
+
+####various tuning examples
+#puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
+#puppet_enterprise::profile::master::java_args:
+#  'Xmx': '2049m'
+#  'Xms': '2049m'
+  
+#puppet_enterprise::profile::puppetdb::java_args: 
+#  "Xmx": "257m" 
+#  "Xms": "257m"
+
+#puppet_enterprise::profile::amq::broker::heap_mb: 256
+#puppet_enterprise::profile::amq::broker::memory_usage: '201mb'
+
+#puppet_enterprise::profile::amq::hub::heap_mb: 256
+#puppet_enterprise::profile::amq::hub::memory_usage: '201mb'
+
+### PuppetDB command processing (defaults to half the system CPU cores)
+#puppet_enterprise::puppetdb::command_processing_threads: <NUMBER of THREADS>
+
+### Console service status check timeout 
+#puppet_enterprise::console_services::service_alert_timeout: 5000
+
+###workaround for https://tickets.puppetlabs.com/browse/PE-10166
+#puppet_enterprise::profile::certificate_authority::client_whitelist:
+#  - agent2.example.com
+#  - 192.168.0.24
+
+##test adding to file-sync API whitelist
+#puppet_enterprise::master::file_sync::whitelisted_certnames:
+#  - agent2.example.com
+#  - 192.168.0.24

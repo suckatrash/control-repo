@@ -1,0 +1,17 @@
+---
+
+puppet_enterprise::profile::master::check_for_updates: false
+puppet_enterprise::manage_symlinks: false
+puppet_enterprise::send_analytics_data": false
+puppet_enterprise::profile::master::code_manager_auto_configure: true
+puppet_enterprise::profile::master::check_for_updates: false
+puppet_enterprise::profile::console::rbac_session_timeout: 480
+puppet_enterprise::profile::console::display_local_time: true
+puppet_enterprise::profile::puppetdb::node_purge_ttl: "1d"
+puppet_enterprise::profile::puppetdb::node_ttl: "0s"
+puppet_enterprise::profile::database::encoding: "UTF8"
+puppet_enterprise::profile::database::locale: "en_US.UTF-8"
+puppet_enterprise::profile::database::ctype: "en_US.UTF-8"
+puppet_enterprise::profile::database::collate: "en_US.UTF-8"
+puppet_enterprise::profile::master::r10k_remote: "git@github.com:suckatrash/control-repo.git"
+puppet_enterprise::profile::master::r10k_private_key: "/etc/puppetlabs/puppetserver/ssl/id_rsa"

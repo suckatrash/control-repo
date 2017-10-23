@@ -1,25 +1,11 @@
---- 
-version: 5 
-defaults: 
-datadir: data 
-data_hash: yaml_data
+---
+version: 5
+defaults:
+  datadir: data
+  data_hash: yaml_data
 
-hierarchy: 
-
-- name: "Public data" 
-paths: 
-- "nodes/%{clientcert}.yaml" 
-- "roles/%{role}/%{zone}.yaml" 
-- "roles/%{role}/%{location}/%{tier}.yaml" 
-- "roles/%{role}/%{location}.yaml" 
-- "roles/%{role}/%{tier}.yaml" 
-- "roles/%{role}.yaml" 
-- "groups/%{group}.yaml" 
-- "zones/%{zone}.yaml" 
-- "locations/%{location}/%{tier}/%{zone}.yaml" 
-- "locations/%{location}/%{zone}.yaml" 
-- "locations/%{location}/%{tier}.yaml" 
-- "locations/%{location}.yaml" 
-- "tiers/%{tier}.yaml" 
-- "osfamily/%{osfamily}.yaml" 
-- "common/global.yaml"
+hierarchy:
+  - name: "Public data"
+    paths:
+      - "nodes/%{clientcert}.yaml"
+      - "common.yaml"

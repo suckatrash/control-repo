@@ -3,9 +3,7 @@ forge "http://forge.puppetlabs.com"
 
 ## Stuff I have in .site requires these:
 mod 'puppetlabs-ntp', '6.0.0'
-mod 'puppetlabs-inifile', '1.6.0'
 mod 'echocat-nfs', '1.8.1'
-mod 'puppetlabs-apt', '2.3.0'
 mod 'puppetlabs-inifile', '1.6.0'
 mod 'puppetlabs-powershell', '2.1.2'
 mod 'puppetlabs-puppet_agent', '1.3.2'
@@ -31,7 +29,6 @@ mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'
 mod 'gini-archive'
 mod 'stahnma-epel'
-mod 'puppetlabs-apt'
 mod 'richardc-datacat'
 mod 'ceritsc-yum'
 mod 'puppetlabs-apache', '1.11.0'

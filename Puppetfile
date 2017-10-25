@@ -63,9 +63,15 @@ mod 'pe_metrics_dashboard',
   :git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
   :branch => 'master'
 
+### ticket 27864 testing
+
 mod 'vmware_puppetfact',
   :git    => 'https://github.com/wolfspyre/vmware_puppetfact.git',
   :branch => 'origin'
+
+mod 'zypprepo',
+  :git    => 'https://github.com/deadpoint/puppet-zypprepo.git',
+  :branch => 'master'
 
 # ===== Other examples =====
 # Modules from Git

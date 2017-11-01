@@ -60,8 +60,9 @@ mod 'test_module',
   :git => 'https://github.com/suckatrash/test_module.git'
 
 mod 'pe_metrics_dashboard',
-  :git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'dash_update'
+  #:git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  :branch => 'master'
 
 ### ticket 27864 testing
 

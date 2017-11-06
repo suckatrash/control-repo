@@ -59,11 +59,6 @@ mod 'suckatrash-grafanadash',
 mod 'test_module', 
   :git => 'https://github.com/suckatrash/test_module.git'
 
-mod 'pe_metrics_dashboard',
-  #:git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  :git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'master'
-
 ### ticket 27864 testing
 
 mod 'vmware_puppetfact',
@@ -92,3 +87,11 @@ mod 'zypprepo',
 mod 'thias-nagios',
   :git    => 'https://github.com/thias/puppet-nagios.git',
   :branch => 'master'
+
+
+#######
+
+mod 'pe_metrics_dashboard',
+  :git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
+  #:git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  :branch => 'graphite_work'

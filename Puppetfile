@@ -21,7 +21,7 @@ mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-java_ks', '1.6.0'
 
 ### test monitor requirements
-mod 'puppet-grafana', '3.0.0'
+mod 'puppet-grafana', '4.0.2'
 mod 'golja-influxdb', '4.0.0'
 mod 'datacentred-telegraf', '1.4.0'
 

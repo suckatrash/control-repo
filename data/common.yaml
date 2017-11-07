@@ -48,6 +48,7 @@ puppet_enterprise::puppetdb::command_processing_threads: 3
 #puppet_enterprise::master::code_manager::timeouts_hook: 30
 #puppet_enterprise::master::code_manager::timeouts_shutdown: 610
 #puppet_enterprise::master::code_manager::timeouts_wait: 700
+#puppet_enterprise::master::code_manager::timeouts_sync: 60
 
 #puppet_enterprise::master::code_manager::authenticate_webhook: false
 #puppet_enterprise::master::code_manager::invalid_branches: "correct"

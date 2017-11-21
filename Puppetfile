@@ -92,6 +92,6 @@ mod 'thias-nagios',
 #######
 
 mod 'pe_metrics_dashboard',
-  :git    => 'https://github.com/suckatrash/puppetlabs-pe_metrics_dashboard.git',
+  :git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'graphite_work2'
+  :branch => 'telegraf_tags'

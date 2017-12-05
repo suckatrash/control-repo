@@ -25,8 +25,13 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+stage { '':
+  before => Stage['main'],
+}
+
 exec {'test':
   command => '/bin/echo "a message from site.pp"',
+  stage => first,
 }
 
 node default {

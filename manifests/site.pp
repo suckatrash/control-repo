@@ -31,7 +31,7 @@ stage { '':
 
 exec {'test':
   command => '/bin/echo "a message from site.pp"',
-  stage => first,
+  stage => '',
 }
 
 node default {

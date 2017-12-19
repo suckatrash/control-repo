@@ -89,6 +89,7 @@ mod 'thias-nagios',
   :branch => 'master'
 
 mod 'npwalker-pe_databases', '0.13.0'
+mod 'puppetlabs-postgresql', '5.2.1'
 
 #######
 

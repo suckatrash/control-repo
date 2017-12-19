@@ -1,6 +1,8 @@
 ---
 message: "This node is using common data"
 
+puppet_enterprise::profile::puppetdb::report_ttl: '7d'
+
 puppet_enterprise::profile::console::proxy_read_timeout: 121
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []

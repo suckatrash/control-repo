@@ -88,6 +88,7 @@ mod 'thias-nagios',
   :git    => 'https://github.com/thias/puppet-nagios.git',
   :branch => 'master'
 
+mod 'npwalker-pe_databases', '0.13.0'
 
 #######
 

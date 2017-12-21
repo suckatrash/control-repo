@@ -1,5 +1,5 @@
 ---
-message: "from common"
+message: "nuts for xmas"
 
 puppet_enterprise::profile::puppetdb::report_ttl: '7d'
 

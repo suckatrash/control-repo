@@ -1,5 +1,5 @@
 ---
-message: "This node is using common data"
+message: "test message from common"
 
 puppet_enterprise::profile::puppetdb::report_ttl: '7d'
 

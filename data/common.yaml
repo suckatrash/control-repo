@@ -42,7 +42,7 @@ puppet_enterprise::puppetdb::command_processing_threads: 3
 #  proxy: 'http://proxy.example.com:3228'
 
 ##Code manager tuning
-#puppet_enterprise::master::code_manager::deploy_pool_size: 8
+puppet_enterprise::master::code_manager::deploy_pool_size: 8
 #puppet_enterprise::master::code_manager::timeouts_deploy: 30
 #puppet_enterprise::master::code_manager::timeouts_fetch: 300
 #puppet_enterprise::master::code_manager::timeouts_hook: 30

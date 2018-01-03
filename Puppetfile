@@ -97,4 +97,4 @@ mod 'pe_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   :git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'disable_repo'
+  :branch => 'unmanage_repos'

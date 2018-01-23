@@ -41,6 +41,8 @@ puppet_enterprise::profile::database::shared_preload_libraries:
   - pglogical
   - auto_explain
   
+puppet_enterprise::profile::database::shared_buffers: '840MB'
+  
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forge.puppetlabs.com'
 #  proxy: 'http://proxy.example.com:3228'

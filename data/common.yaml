@@ -62,7 +62,7 @@ puppet_enterprise::master::code_manager::deploy_pool_size: 8
 puppet_enterprise::profile::console::classifier_synchronization_period: 0
 
 ## possible fix for https://tickets.puppetlabs.com/browse/PE-18235
-puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
+#puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
 
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 

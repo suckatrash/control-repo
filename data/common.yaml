@@ -1,8 +1,8 @@
 ---
 message: "This node is using common data"
 
-#This doesn't work
-#puppet_enterprise::profile::console::certs::certname: "public-console"
+puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
+puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 

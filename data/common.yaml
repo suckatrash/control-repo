@@ -1,7 +1,8 @@
 ---
 message: "This node is using common data"
 
-puppet_enterprise::profile::console::certs::certname: "public-console"
+#This doesn't work
+#puppet_enterprise::profile::console::certs::certname: "public-console"
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 

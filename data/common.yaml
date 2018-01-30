@@ -4,7 +4,7 @@ message: "This node is using common data"
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
 
-puppet_enterprise::profile::agent::manage_symlinks: true
+#puppet_enterprise::profile::agent::manage_symlinks: true
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 

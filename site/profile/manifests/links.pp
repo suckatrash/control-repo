@@ -1,7 +1,7 @@
 class profile::links {
 
 if ! defined(File["/usr/local/bin"]) {
-  file { '/usr/local':
+  file { '/usr/local/bin':
   ensure => 'directory',
   replace => false,
 }

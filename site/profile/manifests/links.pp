@@ -1,5 +1,11 @@
 class profile::links {
 
+if ! defined(File[“/usr/local/bin”]) {
+  file { ‘/usr/local’:
+  ensure => 'directory',
+  replace => false,
+}
+
 file { '/usr/local/bin/inq':
   ensure => file,
   owner => 'root',

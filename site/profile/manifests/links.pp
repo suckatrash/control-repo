@@ -5,6 +5,7 @@ if ! defined(File["/usr/local/bin"]) {
   ensure => 'directory',
   replace => false,
 }
+}
 
 file { '/usr/local/bin/inq':
   ensure => file,

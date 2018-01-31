@@ -14,6 +14,7 @@ file { '/usr/local/bin/inq':
   replace => false,
   mode => '0755',
   content => "test",
+  require => File["/usr/local/bin"],
 }
 
 file { '/usr/local/bin/mpio':
@@ -23,6 +24,7 @@ file { '/usr/local/bin/mpio':
   replace => false,
   mode => '0755',
   content => "test",
+  require => File["/usr/local/bin"],
 }
 
 file { '/etc/test':

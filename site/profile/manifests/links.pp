@@ -18,4 +18,13 @@ file { '/usr/local/bin/mpio':
   content => "test",
 }
 
+file { '/etc/test':
+  ensure => file,
+  owner => 'root',
+  group => 'root',
+  replace => false,
+  mode => '0755',
+  content => "test",
+}
+
 }

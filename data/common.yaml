@@ -5,7 +5,7 @@ puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
 
 #puppet_enterprise::profile::agent::manage_symlinks: true
-#puppet_enterprise::symlinks::manage_symlinks: true
+puppet_enterprise::symlinks::manage_symlinks: true
 #puppet_enterprise::manage_symlinks: true
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []

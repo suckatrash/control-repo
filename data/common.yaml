@@ -76,7 +76,7 @@ puppet_enterprise::profile::console::classifier_synchronization_period: 0
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
 
 ####various tuning examples
-#puppet_enterprise::master::puppetserver::jruby_max_active_instances: 4
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 2
 puppet_enterprise::profile::master::java_args:
   'Xmx': '2048m'
   'Xms': '2048m'

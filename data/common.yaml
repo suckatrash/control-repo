@@ -77,7 +77,7 @@ puppet_enterprise::profile::console::classifier_synchronization_period: 0
 
 ####various tuning examples
 puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
-puppet_enterprise::master::puppetserver::jruby_borrow_timeout: 200
+puppet_enterprise::master::puppetserver::jruby_borrow_timeout: 10000
 puppet_enterprise::profile::master::java_args:
   'Xmx': '2048m'
   'Xms': '2048m'

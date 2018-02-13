@@ -1,6 +1,9 @@
 ---
 message: "This node is using common data"
 
+role:
+  -
+
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
 

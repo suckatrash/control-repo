@@ -101,3 +101,11 @@ mod 'pe_metrics_dashboard',
   #:branch => 'file_sync_dash'
   #:branch => 'master'
    :branch => 'add_compile_time'
+
+###gtm
+
+mod 'puppetlabs-docker', '1.0.5'
+
+mod 'jmick44-nginx_containerv',
+ :git => 'https://github.com/jmick44/nginx_container.git',
+ :branch => 'master'

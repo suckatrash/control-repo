@@ -105,7 +105,7 @@ mod 'pe_metrics_dashboard',
 ###gtm
 
 mod 'puppetlabs-docker', '1.0.5'
-
+mod 'puppetlabs-translate', '1.1.0'
 mod 'jmick44-nginx_containerv',
  :git => 'https://github.com/jmick44/nginx_container.git',
  :branch => 'master'

@@ -104,7 +104,7 @@ puppet_enterprise::profile::puppetdb::java_args:
 
 ###workaround for https://tickets.puppetlabs.com/browse/PE-10166
 puppet_enterprise::profile::certificate_authority::client_whitelist:
-  - 10.32.168.15
+  - 192.168.0.15
 #  - agent2.example.com
 #  - 192.168.0.24
 

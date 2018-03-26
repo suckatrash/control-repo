@@ -20,6 +20,8 @@ mod 'puppetlabs-stdlib', '4.13.1'
 mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-java_ks', '1.6.0'
 
+mod 'jriviere-windows_services', '0.0.4'
+
 ### test monitor requirements
 mod 'puppet-grafana', '4.0.2'
 mod 'golja-influxdb', '4.0.0'

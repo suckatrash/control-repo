@@ -14,7 +14,7 @@ puppet_enterprise::manage_symlinks: true
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 
 #Puppet Server Tuning
-puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 5
+#puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance: 5
 
 #puppet_enterprise::master::environment_timeout: '0'
 

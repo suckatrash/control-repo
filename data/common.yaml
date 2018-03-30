@@ -10,6 +10,7 @@ puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/
 #puppet_enterprise::profile::agent::manage_symlinks: true
 #puppet_enterprise::symlinks::manage_symlinks: true
 puppet_enterprise::manage_symlinks: true
+puppet_enterprise::profile::master::send_analytics_data: false
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 

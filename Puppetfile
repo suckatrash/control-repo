@@ -98,16 +98,7 @@ mod 'puppetlabs-postgresql', '5.2.1'
 mod 'pe_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  #:git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
-  :git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
+  :git    => 'https://github.com/puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  #:git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
   #:branch => 'file_sync_dash'
-  #:branch => 'master'
-   :branch => 'add_compile_time'
-
-###gtm
-
-mod 'puppetlabs-docker', '1.0.5'
-mod 'puppetlabs-translate', '1.1.0'
-mod 'jmick44-nginx_containerv',
- :git => 'https://github.com/jmick44/nginx_container.git',
- :branch => 'master'
+  :branch => 'master'

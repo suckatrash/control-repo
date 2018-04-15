@@ -27,7 +27,6 @@ mod 'datacentred-telegraf', '1.4.0'
 
 mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'
-mod 'gini-archive'
 mod 'stahnma-epel'
 mod 'richardc-datacat'
 mod 'ceritsc-yum'

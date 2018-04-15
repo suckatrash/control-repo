@@ -9,14 +9,12 @@ mod 'puppetlabs-powershell', '2.1.2'
 mod 'puppetlabs-puppet_agent', '1.3.2'
 mod 'zack-exports', '0.0.6'
 mod 'puppetlabs-acl', '2.0.0'
-#mod 'puppetlabs-stdlib', '4.15.0'
 mod 'puppetlabs-transition', '0.1.1'
 mod 'puppetlabs-sqlserver', '1.2.0'
 mod 'saz-sudo', '4.1.0'
 mod 'puppetlabs-puppet_authorization', '0.2.0'
 mod 'puppetlabs-hocon', '0.9.4'
-#mod 'puppetlabs-stdlib', '4.16.0'
-mod 'puppetlabs-stdlib', '4.13.1'
+mod 'puppetlabs-stdlib', '4.19.0'
 mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-java_ks', '1.6.0'
 
@@ -36,7 +34,7 @@ mod 'ceritsc-yum'
 mod 'puppetlabs-apache', '1.11.0'
 
 #mod 'puppetlabs-mongodb', '0.17.0'
-mod 'puppetlabs-apt', '2.4.0'
+mod 'puppetlabs-apt', '4.5.1'
 
 #mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppet-staging', '2.2.0'
@@ -102,3 +100,10 @@ mod 'pe_metrics_dashboard',
   #:git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
   #:branch => 'file_sync_dash'
   :branch => 'master'
+
+###kubernetes###
+
+mod 'puppetlabs-kubernetes', '1.1.0'
+mod 'puppet-archive', '3.0.0'
+mod 'maestrodev-wget', '1.7.3'
+mod 'puppetlabs-translate', '1.1.0'

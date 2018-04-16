@@ -325,3 +325,5 @@ kubernetes::etcd_initial_cluster: etcd-ld07677=http://10.32.175.184:2380
 kubernetes::etcd_ip: 10.32.175.184
 kubernetes::kube_api_advertise_address: 10.32.175.184
 kubernetes::install_dashboard: true
+kubernetes::kube_api_service_ip: 10.96.0.1
+kubernetes::kube_dns_ip: 10.96.0.10

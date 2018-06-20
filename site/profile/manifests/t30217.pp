@@ -1,8 +1,9 @@
 class profile::t30217 {
 
-  service {'pe-puppetserver':
-    ensure => running,
-    enable => true,
-  }
+puppet_enterprise::trapperkeeper::pe_service { 'pe-puppetserver' : }
+#  service {'pe-puppetserver':
+#    ensure => running,
+#    enable => true,
+#  }
  
 }

@@ -3,6 +3,8 @@ class profile::t30217 {
   include puppet_enterprise::packages
   Package <| tag == 'pe-master-packages' |>
   
+  include puppet_enterprise::master::file_sync_disabled
+  
   puppet_enterprise::trapperkeeper::bootstrap_cfg { 'certificate-authority-service' :
     container => 'puppetserver',
     namespace => 'puppetlabs.enterprise.services.reverse-proxy.reverse-proxy-ca-service',

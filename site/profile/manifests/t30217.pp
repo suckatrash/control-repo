@@ -7,8 +7,8 @@ class profile::t30217 {
   
   puppet_enterprise::trapperkeeper::bootstrap_cfg { 'certificate-authority-service' :
     container => 'puppetserver',
-    namespace => 'puppetlabs.enterprise.services.reverse-proxy.reverse-proxy-ca-service',
-    service   => 'reverse-proxy-ca-service',
+    namespace => 'puppetlabs.services.ca.certificate-authority-disabled-service',
+    service   => 'certificate-authority-disabled-service',
     require   => Package['pe-puppetserver'],
     notify    => Service['pe-puppetserver'],
   }

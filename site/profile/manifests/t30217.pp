@@ -1,4 +1,4 @@
-class profile::30217 {
+class profile::t30217 {
 
   service {'pe-puppetserver':
     ensure => running,

@@ -90,7 +90,7 @@ mod 'puppetlabs-postgresql', '5.2.1'
 
 #######
 
-mod 'pe_metrics_dashboard',
+mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
   :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',

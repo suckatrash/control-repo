@@ -1,6 +1,8 @@
 ---
 message: "This node is using common data"
 
+puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
+
 role:
   -
 

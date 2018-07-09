@@ -88,6 +88,10 @@ mod 'thias-nagios',
 mod 'npwalker-pe_databases', '0.13.0'
 mod 'puppetlabs-postgresql', '5.2.1'
 
+mod 'support-tasks',
+  :git   => 'git@github.com:suckatrash/support-tasks.git',
+  :branch => 'kb0285'
+
 #######
 
 mod 'puppet_metrics_dashboard',

@@ -90,7 +90,7 @@ mod 'puppetlabs-postgresql', '5.2.1'
 
 mod 'puppetlabs-support_tasks',
   :git   => 'git@github.com:suckatrash/support-tasks.git',
-  :branch => 'kb0285'
+  :branch => 'master'
 
 #######
 

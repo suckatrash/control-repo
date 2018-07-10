@@ -15,6 +15,7 @@ mod 'puppetlabs-hocon', '0.9.4'
 mod 'puppetlabs-stdlib', '4.19.0'
 mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-java_ks', '1.6.0'
+mod 'puppet-hiera', '3.3.2'
 
 mod 'jriviere-windows_services', '0.0.4'
 

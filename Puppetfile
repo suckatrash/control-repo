@@ -90,7 +90,7 @@ mod 'npwalker-pe_databases', '0.13.0'
 mod 'puppetlabs-postgresql', '5.2.1'
 
 mod 'puppetlabs-support_tasks',
-  :git   => 'git@github.com:suckatrash/support-tasks.git',
+  :git   => 'git@github.com:puppetlabs/support-tasks.git',
   :branch => 'master'
 
 #######

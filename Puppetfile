@@ -87,7 +87,7 @@ mod 'thias-nagios',
   :branch => 'master'
 
 mod 'npwalker-pe_databases',
-  :git => 'git@github.com:suckatrash/pe_databases.git'
+  :git => 'git@github.com:suckatrash/pe_databases.git',
   :branch => 'fact_path_vacuuming'
 
 mod 'puppetlabs-postgresql', '5.2.1'

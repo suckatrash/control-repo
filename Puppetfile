@@ -37,7 +37,10 @@ mod 'puppetlabs-apt', '4.5.1'
 #mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppet-staging', '2.2.0'
 
-mod 'puppetlabs-puppet_metrics_collector', '5.0.1'
+mod 'puppetlabs-puppet_metrics_collector',
+  :git   => 'git@github.com:suckatrash/puppetlabs-puppet_metrics_collector.git',
+  :branch => 'add_console_metrics'
+
 #mod 'puppetlabs-aws', '1.4.0'
 #mod 'puppetlabs-vsphere', '1.2.2'
 

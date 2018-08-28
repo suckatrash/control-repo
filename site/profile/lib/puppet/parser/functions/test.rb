@@ -1,8 +1,8 @@
 require 'puppet/type/file'
  
 module Puppet::Parser::Functions
-  newfunction(:owner_defed_after_require, :type => :rvalue) do |args|
-    Puppet.info "owner_defed_after_require: enter"
+  newfunction(:test, :type => :rvalue) do |args|
+    Puppet.info "test: enter"
  
     klass_defined = false
     if Object.const_defined?("Puppet")
@@ -15,7 +15,7 @@ module Puppet::Parser::Functions
       end
     end
  
-    Puppet.info "owner_defed_after_require: exit (#{klass_defined})"
+    Puppet.info "test: exit (#{klass_defined})"
     klass_defined
   end
 end

@@ -8,10 +8,4 @@ class { '::ntp':
   restrict => [ '127.0.0.1' ],
 }
 
-##demo
-file { '/tmp/testfile':
-  ensure => file,
-  content => 'this is a test file',
-}
-
 }

@@ -18,7 +18,7 @@ ssh_authorized_key { $email:
 
 user { $name:
   ensure         => present,
-  purge_ssh_keys => true,
+  purge_ssh_keys => false,
   shell          => $shell,
   home           => "${home}",
   managehome     => 'true',

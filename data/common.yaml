@@ -90,8 +90,8 @@ puppet_enterprise::profile::master::java_args:
   'XX:+UseG1GC': ''
   
 puppet_enterprise::profile::puppetdb::java_args: 
-  "Xmx": "512m" 
-  "Xms": "512m"
+  "Xmx": "256m" 
+  "Xms": "256m"
 
 #puppet_enterprise::profile::amq::broker::heap_mb: 256
 #puppet_enterprise::profile::amq::broker::memory_usage: '201mb'

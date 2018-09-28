@@ -8,8 +8,8 @@ role:
 
 #test new console settings
 
-puppet_enterprise::console_services::max_connections_per_route: 7
-puppet_enterprise::console_services::max_connections_total: 9
+#puppet_enterprise::console_services::max_connections_per_route: 7
+#puppet_enterprise::console_services::max_connections_total: 9
 
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
 puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"

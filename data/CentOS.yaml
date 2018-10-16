@@ -1,10 +1,8 @@
 
 kubernetes::kubernetes_version: 1.10.2
-kubernetes::apiserver_cert_extra_sans: ["foo"]
-kubernetes::feature_gates: ["foo"]
 kubernetes::kubernetes_package_version: 
 kubernetes::container_runtime: docker
-kubernetes::cni_network_provider: https://cloud.weave.works/k8s/net?k8s-version=1.10.2
+kubernetes::cni_network_provider: https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 kubernetes::cni_pod_cidr: 10.32.0.0/12
 kubernetes::etcd_initial_cluster: kube-cluster-master.platform9.puppet.net=https://192.168.0.10:2380,kube-cluster-worker01.platform9.puppet.net=https://192.168.0.14:2380
 kubernetes::etcd_peers:

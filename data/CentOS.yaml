@@ -8,8 +8,8 @@ kubernetes::etcd_initial_cluster: kube-cluster-master.platform9.puppet.net=https
 kubernetes::etcd_peers:
 - 192.168.0.10
 - 192.168.0.14
-kubernetes::etcd_ip: "%{::ipaddress_eth1}"
-kubernetes::kube_api_advertise_address: "%{::ipaddress_eth1}"
+kubernetes::etcd_ip: "%{::ipaddress}"
+kubernetes::kube_api_advertise_address: "%{::ipaddress}"
 kubernetes::api_server_count: 2
 kubernetes::install_dashboard: true
 kubernetes::controller_address: 192.168.0.10:6443

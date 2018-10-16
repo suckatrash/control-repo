@@ -6,8 +6,8 @@ kubernetes::cni_network_provider: https://raw.githubusercontent.com/coreos/flann
 kubernetes::cni_pod_cidr: 10.32.0.0/12
 kubernetes::etcd_initial_cluster: kube-cluster-master=https://192.168.0.15:2380,kube-cluster-worker01=https://192.168.0.6:2380
 kubernetes::etcd_peers:
-- 192.168.0.6
 - 192.168.0.15
+- 192.168.0.6
 kubernetes::etcd_ip: "%{::ipaddress}"
 kubernetes::kube_api_advertise_address: "%{::ipaddress}"
 kubernetes::api_server_count: 2

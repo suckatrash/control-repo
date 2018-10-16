@@ -115,7 +115,10 @@ mod 'puppet_metrics_dashboard',
 
 ###kubernetes###
 
-mod 'puppetlabs-kubernetes', '3.0.1'
+#mod 'puppetlabs-kubernetes', '3.0.1'
+mod 'puppetlabs-kubernetes',
+  :git => 'git@github.com:suckatrash/puppetlabs-kubernetes.git',
+  :branch => 'issue/fix_function_errors'
 mod 'puppet-archive', '3.1.0'
 mod 'puppet-wget', '2.0.0'
 mod 'puppetlabs-translate', '1.1.0'

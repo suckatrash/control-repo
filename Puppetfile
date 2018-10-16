@@ -32,7 +32,7 @@ mod 'ceritsc-yum'
 mod 'puppetlabs-apache', '1.11.0'
 
 #mod 'puppetlabs-mongodb', '0.17.0'
-mod 'puppetlabs-apt', '4.5.1'
+mod 'puppetlabs-apt', '6.0.0'
 
 #mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppet-staging', '2.2.0'
@@ -115,7 +115,7 @@ mod 'puppet_metrics_dashboard',
 
 ###kubernetes###
 
-mod 'puppetlabs-kubernetes', '1.1.0'
-mod 'puppet-archive', '3.0.0'
-mod 'maestrodev-wget', '1.7.3'
+mod 'puppetlabs-kubernetes', '3.0.1'
+mod 'puppet-archive', '3.1.0'
+mod 'maestrodev-wget', '2.0.0'
 mod 'puppetlabs-translate', '1.1.0'

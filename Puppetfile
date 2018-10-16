@@ -117,5 +117,5 @@ mod 'puppet_metrics_dashboard',
 
 mod 'puppetlabs-kubernetes', '3.0.1'
 mod 'puppet-archive', '3.1.0'
-mod 'maestrodev-wget', '2.0.0'
+mod 'mpuppet-wget', '2.0.0'
 mod 'puppetlabs-translate', '1.1.0'

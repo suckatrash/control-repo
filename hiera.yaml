@@ -8,5 +8,5 @@ hierarchy:
   - name: "Public data"
     paths:
       - "nodes/%{clientcert}.yaml"
-      - "%{os.name}.yaml  
+      - "%{os.name}.yaml"
       - "common.yaml"

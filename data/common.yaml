@@ -100,6 +100,10 @@ puppet_enterprise::profile::puppetdb::java_args:
   "Xmx": "256m" 
   "Xms": "256m"
 
+puppet_enterprise::profile::orchestrator::java_args:
+  "Xmx": "256m" 
+  "Xms": "256m"
+
 #puppet_enterprise::profile::amq::broker::heap_mb: 256
 #puppet_enterprise::profile::amq::broker::memory_usage: '201mb'
 

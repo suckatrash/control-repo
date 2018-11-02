@@ -1,12 +1,7 @@
 class report_test (
   Boolean $variable
-){
+)
 
-  if $variable {
-    notice('true')
+  class {'report_test::subclass':
+    variable => $variable,
   }
-  else {
-    notice('false')
-  }
-
-}

@@ -99,9 +99,9 @@ mod 'puppetlabs-support_tasks',
   :git   => 'git@github.com:puppetlabs/support-tasks.git',
   :branch => 'master'
 
-#mod 'legacy_fact_blocker',
-#  :git  => 'git@github.com:suckatrash/legacy_fact_blocker.git',
-#  :branch => 'master'
+mod 'legacy_fact_blocker',
+  :git  => 'git@github.com:suckatrash/legacy_fact_blocker.git',
+  :branch => 'master'
  
 #######
 

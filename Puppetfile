@@ -20,7 +20,8 @@ mod 'puppet-hiera', '3.3.2'
 mod 'jriviere-windows_services', '0.0.4'
 
 ### test monitor requirements
-mod 'puppet-grafana', '4.0.2'
+mod 'grafana',               :git => 'git://github.com/bfraser/puppet-grafana.git',                             :commit => 'c4d6b5c276c1db865bd8502542702bcf97551806'
+#mod 'puppet-grafana', '4.0.2'
 mod 'golja-influxdb', '4.0.0'
 mod 'datacentred-telegraf', '1.4.0'
 

@@ -13,7 +13,7 @@ class test::postgres {
   }
 
   pe_postgresql::server::database_grant { 'telegraf':
-    privilege => 'SELECT',
+    privilege => 'CONNECT',
     db        => 'pe-puppetdb',
     role      => 'telegraf',
   }

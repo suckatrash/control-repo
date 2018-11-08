@@ -5,7 +5,16 @@ class test::postgres {
     database => 'pe-puppetdb',
     user     => 'telegraf',
     auth_method => 'password',
-    address     => '192.168.0.8',
+    address     => '192.168.0.8/32',
+  }
+  
+  pe_postgresql::server::role { 'telegraf':
+    password_hash => pe_postgresql_password('telegraf', 'telegraf'),
   }
 
+  pe_postgresql::server::database_grant { 'telegraf':
+    privilege => 'READ',
+    db        => 'pe-puppetdb',
+    role      => 'telegraf',
+  }
 }

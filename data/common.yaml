@@ -7,11 +7,11 @@ role:
   -
 
 #test facts blacklist puppetdb
-puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
-  - "^blockdevice.*"
-  - "^network6.*"
-  - "^netmask6.*"
-  - "^uptime.*"
+#puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
+#  - "^blockdevice.*"
+#  - "^network6.*"
+#  - "^netmask6.*"
+#  - "^uptime.*"
 
 #test new console settings
 

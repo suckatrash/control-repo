@@ -8,9 +8,9 @@ role:
 
 #test facts blacklist puppetdb
 puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
-  - "^aio."
-  - "^blockdevice."
-  - "^network6."
+  - "^aio.*"
+  - "^blockdevice.*"
+  - "^network6.*"
 
 #test new console settings
 

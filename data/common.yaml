@@ -11,6 +11,7 @@ puppet_enterprise::puppetdb::database_ini::facts_blacklist:
   - "^blockdevice_.*"
   - "^network6_.*"
   - "^netmask6_.*"
+  - "^uptime.*"
 
 #test new console settings
 

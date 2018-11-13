@@ -11,6 +11,7 @@ puppet_enterprise::puppetdb::database_ini::facts_blacklist:
   - "^aio_.*"
   - "^blockdevice.*"
   - "^network6_.*"
+  - "^netmask6_.*"
 
 #test new console settings
 

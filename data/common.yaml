@@ -6,6 +6,10 @@ message: "This node is using common data"
 role:
   -
 
+#test facts blacklist puppetdb
+puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
+  - "^aio"
+
 #test new console settings
 
 #puppet_enterprise::console_services::max_connections_per_route: 7

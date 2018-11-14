@@ -1,4 +1,4 @@
-class test::midserver  
+class test::midserver {
 
   $dest     = "F:\\ServiceNow"
   

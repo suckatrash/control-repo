@@ -2,7 +2,7 @@ class test::midserver {
   
   file { "test":
     ensure => file,
-    path => "C:\\test\folder",
+    path => "C:\\test\somefolder\test",
   }
   
 }

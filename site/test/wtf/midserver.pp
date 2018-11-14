@@ -4,6 +4,9 @@ class test::midserver {
   
   file { "test":
     ensure => file,
+    mode => '0664',
+    backup => false,
+    replace => true,
     path => "${agentdir}/agent/test.xml",
   }
   

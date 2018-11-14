@@ -1,8 +1,10 @@
 class test::midserver {
   
+  $agentdir = "C:\\test\\notarealfolder"
+  
   file { "test":
     ensure => file,
-    path => "C:\\test\\somefolder\\test",
+    path => "${agentdir}/agent/test.xml",
   }
   
 }

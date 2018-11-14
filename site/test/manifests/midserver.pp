@@ -1,9 +1,8 @@
 class test::midserver {
-
-  $dest     = "F:\\ServiceNow"
   
-  file { "$dest":
-    ensure => directory,
+  file { "test":
+    ensure => file,
+    path => "C:\\test\folder",
   }
   
 }

@@ -8,10 +8,10 @@ role:
 
 #test facts blacklist puppetdb
 #puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'
-puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
-  - "^blockdevice.*"
-  - "^network6.*"
-  - "^netmask6.*"
+#puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
+#  - "^blockdevice.*"
+#  - "^network6.*"
+#  - "^netmask6.*"
 
 #test new console settings
 

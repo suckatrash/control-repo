@@ -5,7 +5,7 @@ class test::postgres2 (
    $grafana_hostname
 ){
 
-        puppet_enterprise::pg::cert_whitelist_entry { "Allow telegraf user to connect to pe-puppetdb as telegraf}":
+        puppet_enterprise::pg::cert_whitelist_entry { "Allow telegraf user to connect to pe-puppetdb as telegraf":
             user                          => "telegraf",
             database                      => "pe-puppetdb",
             allowed_client_certname       => $grafana_hostname,

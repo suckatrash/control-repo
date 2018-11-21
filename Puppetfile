@@ -110,8 +110,8 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
   :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
-  #:branch => 'file_sync_dash'
-  :tag => '1.0.0'
+  :branch => 'postgres'
+  #:tag => '1.0.0'
 
 ###kubernetes###
 

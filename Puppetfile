@@ -108,7 +108,7 @@ mod 'legacy_fact_blocker',
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
+  :git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
   #:git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
   :branch => 'postgres'
   #:tag => '1.0.0'

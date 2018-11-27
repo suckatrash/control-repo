@@ -9,18 +9,18 @@ role:
 #test facts blacklist puppetdb
 puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'
 puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
-  - “^mtu_.*”
-  - “^network_.*”
-  - “^netmask_.*”
-  -  “^network6_.*”
-  - “^netmask6_.*”
-  - “^blockdevice_.*”
-  - “^macaddress_.*”
-  - “^ipaddress_.*”
-  - “^ipaddress6_.*”
-  - “^duplex_.*”
-  - “^speed_.*”
-  - “^processor\d+”
+  - "^mtu_.*"
+  - "^network_.*"
+  - "^netmask_.*"
+  - "^network6_.*"
+  - "^netmask6_.*"
+  - "^blockdevice_.*"
+  - "^macaddress_.*"
+  - "^ipaddress_.*"
+  - "^ipaddress6_.*"
+  - "^duplex_.*"
+  - "^speed_.*"
+  - "^processor\d+"
 
 #test new console settings
 

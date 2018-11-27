@@ -20,7 +20,7 @@ puppet_enterprise::puppetdb::database_ini::facts_blacklist:
   - "^ipaddress6_.*"
   - "^duplex_.*"
   - "^speed_.*"
-  - '^processor\d+'
+  - '^processor\\d+'
 
 #test new console settings
 

@@ -111,6 +111,8 @@ puppet_enterprise::profile::master::java_args:
   'Xmx': '1024m'
   'Xms': '1024m'
   'XX:+UseG1GC': ''
+  'XX:HeapDumpPath': '=/var/log/dumps'
+  'Djruby.reify.classes':'=true'
   
 puppet_enterprise::profile::puppetdb::java_args: 
   "Xmx": "256m" 

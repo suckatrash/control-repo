@@ -96,8 +96,8 @@ mod 'npwalker-pe_databases',
 mod 'puppetlabs-postgresql', '5.2.1'
 
 mod 'puppetlabs-support_tasks',
-  :git   => 'git@github.com:puppetlabs/support-tasks.git',
-  :branch => 'master'
+  :git   => 'git@github.com:suckatrash/support-tasks.git',
+  :branch => 'puppetserver_request_sizes'
 
 mod 'legacy_fact_blocker',
   :git  => 'git@github.com:suckatrash/legacy_fact_blocker.git',

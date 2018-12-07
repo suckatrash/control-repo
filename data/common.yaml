@@ -5,6 +5,8 @@ message: "Nothing"
 
 role:
   -
+  
+puppet_enterprise::profile::console::proxy::http_redirect::enable_http_redirect: false
 
 #test facts blacklist puppetdb
 puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'

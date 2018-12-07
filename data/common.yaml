@@ -63,6 +63,7 @@ puppet_enterprise::master::code_manager::sources:
 #    remote: "https://github.com/suckatrash/control-repo.git"
 #    prefix: 'https'
  
+puppet_enterprise::profile::puppetdb::gc_interval: "55"
  
 ## puppetdb connection pool and processing thread example 
 ## 2x the PuppetDB command processing threads on the write side and 2x the Puppet Server JRuby pool on the read side.

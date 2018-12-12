@@ -1,5 +1,6 @@
 forge "http://forge.puppetlabs.com"
-##nothing
+
+mod 'puppetlabs-bolt_shim', '0.2.0'
 
 ## Stuff I have in .site requires these:
 mod 'puppetlabs-ntp', '6.0.0'

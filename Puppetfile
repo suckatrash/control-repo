@@ -50,6 +50,10 @@ mod 'puppetlabs-puppet_metrics_collector',
 # :git    => 'https://github.com/puppetlabs/puppetlabs-concat',
 # :commit => 'bb55d80' 
 
+mod 'suckatrash-t33043_facter_override'
+ :git  => 'git@github.com:suckatrash/t33043_facter_override.git',
+ :branch => 'master'
+
 mod 'puppetlabs-firewall',
  :git    => 'https://github.com/puppetlabs/puppetlabs-firewall.git',
  :commit => '6b75f01'

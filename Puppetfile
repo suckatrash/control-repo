@@ -24,6 +24,7 @@ mod 'jriviere-windows_services', '0.0.4'
 mod 'puppet-grafana', '5.0.0'
 mod 'golja-influxdb', '4.0.0'
 mod 'datacentred-telegraf', '1.4.0'
+mod "puppetlabs/inifile",     '2.4.0'
 
 mod 'dwerder-graphite'
 mod 'elasticsearch-elasticsearch'

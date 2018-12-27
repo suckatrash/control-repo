@@ -27,3 +27,4 @@ mod 'puppetlabs-kubernetes',
 mod 'puppet-archive', '3.1.0'
 mod 'puppet-wget', '2.0.0'
 mod 'puppetlabs-translate', '1.1.0'
+mod 'puppetlabs-puppet_agent', '1.7.0'

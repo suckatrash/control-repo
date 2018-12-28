@@ -5,7 +5,6 @@ mod 'puppetlabs-bolt_shim', '0.2.0'
 ## Stuff I have in .site requires these:
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'echocat-nfs', '1.8.1'
-mod 'puppetlabs-inifile', '1.6.0'
 mod 'puppetlabs-puppet_agent', '1.3.2'
 mod 'zack-exports', '0.0.6'
 mod 'puppetlabs-acl', '2.0.0'

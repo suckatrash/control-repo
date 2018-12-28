@@ -9,7 +9,7 @@ puppet_enterprise::profile::master::r10k_remote: "git@github.com:suckatrash/cont
 puppet_enterprise::profile::master::r10k_private_key: "/etc/puppetlabs/puppetserver/ssl/id_rsa"
 
 puppet_enterprise::profile::amq::broker::heap_mb: '96'
-puppet_enterprise::master::puppetserver::jruby_max_active_instances: 3
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 puppet_enterprise::master::puppetserver:reserved_code_cache: '96m'
 puppet_enterprise::profile::master::java_args:
   Xmx: '384m'

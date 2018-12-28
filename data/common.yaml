@@ -3,27 +3,60 @@ message: "Nothing"
 
 #puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
 
+## Debug kit stuff - don't touch ###
 puppet_enterprise::profile::master::code_manager_auto_configure: true
 puppet_enterprise::profile::master::r10k_remote: "git@github.com:suckatrash/control-repo.git"
 puppet_enterprise::profile::master::r10k_private_key: "/etc/puppetlabs/puppetserver/ssl/id_rsa"
-  
+
+puppet_enterprise::profile::amq::broker::heap_mb: '96'
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 3
+puppet_enterprise::master::puppetserver:reserved_code_cache: '96m'
+puppet_enterprise::profile::master::java_args:
+  Xmx: '384m'
+  Xms: '128m'
+  'XX:MaxPermSize': '=96m'
+  'XX:PermSize': '=64m'
+  'XX:+UseG1GC': ''
+puppet_enterprise::profile::puppetdb::java_args:
+  Xmx: '128m'
+  Xms: '64m'
+  'XX:MaxPermSize': '=96m'
+  'XX:PermSize': '=64m'
+  'XX:+UseG1GC': ''
+puppet_enterprise::profile::console::java_args:
+  Xmx: '64m'
+  Xms: '64m'
+  'XX:MaxPermSize': '=96m'
+  'XX:PermSize': '=64m'
+  'XX:+UseG1GC': ''
+puppet_enterprise::profile::console::delayed_job_workers: 1
+#shared_buffers takes affect during install but is not managed after
+puppet_enterprise::profile::database::shared_buffers: '4MB'
+#2015.3.2 and above
+puppet_enterprise::profile::orchestrator::java_args:
+  Xmx: '64m'
+  Xms: '64m'
+  'XX:+UseG1GC': ''
+### End debug kit stuff
+
+
 #puppet_enterprise::profile::console::proxy::http_redirect::enable_http_redirect: false
 
 #test facts blacklist puppetdb
-puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'
-puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
-  - "^mtu_.*"
-  - "^network_.*"
-  - "^netmask_.*"
-  - "^network6_.*"
-  - "^netmask6_.*"
-  - "^blockdevice_.*"
-  - "^macaddress_.*"
-  - "^ipaddress_.*"
-  - "^ipaddress6_.*"
-  - "^duplex_.*"
-  - "^speed_.*"
-  - '^processor\\d+'
+#puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'
+#puppet_enterprise::puppetdb::database_ini::facts_blacklist: 
+#  - "^mtu_.*"
+#  - "^network_.*"
+#  - "^netmask_.*"
+#  - "^network6_.*"
+#  - "^netmask6_.*"
+#  - "^blockdevice_.*"
+#  - "^macaddress_.*"
+#  - "^ipaddress_.*"
+#  - "^ipaddress6_.*"
+#  - "^duplex_.*"
+#  - "^speed_.*"
+#  - '^processor\\d+'
 
 #test new console settings
 
@@ -37,8 +70,8 @@ puppet_enterprise::puppetdb::database_ini::facts_blacklist:
 
 #puppet_enterprise::profile::agent::manage_symlinks: true
 #puppet_enterprise::symlinks::manage_symlinks: true
-puppet_enterprise::manage_symlinks: true
-puppet_enterprise::profile::master::send_analytics_data: false
+#puppet_enterprise::manage_symlinks: true
+#puppet_enterprise::profile::master::send_analytics_data: false
 
 #puppet_enterprise::master::puppetserver::pre_commit_hook_commands: []
 
@@ -57,9 +90,9 @@ puppet_enterprise::profile::master::send_analytics_data: false
 #  forge_authorization: 'pe-license UHVwcGV0IExhYnM='
 
 ### setup for external hieradata follows:
-puppet_enterprise::master::code_manager::sources:
-  code: 
-    remote: "git@github.com:suckatrash/control-repo.git"
+#puppet_enterprise::master::code_manager::sources:
+#  code: 
+#    remote: "git@github.com:suckatrash/control-repo.git"
 #  other2:
 #    remote: "https://github.com/suckatrash/control-repo.git"
 #    prefix: 'https'
@@ -78,8 +111,6 @@ puppet_enterprise::master::code_manager::sources:
 #puppet_enterprise::profile::database::shared_preload_libraries: 
 #  - pglogical
 #  - auto_explain
-  
-puppet_enterprise::profile::database::shared_buffers: '840MB'
   
 #puppet_enterprise::master::code_manager::forge_settings:
 #  baseurl: 'https://forge.puppetlabs.com'
@@ -105,24 +136,6 @@ puppet_enterprise::profile::database::shared_buffers: '840MB'
 #### this was for an escalation.  adds HEX output to ring buffer or PS daemon log
 #puppet_enterprise::profile::master::java_args: 
 #  'Djavax.net.debug=': 'ssl:sslctx:plaintext'
-
-####various tuning examples
-#puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
-#puppet_enterprise::master::puppetserver::jruby_borrow_timeout: 10000
-#puppet_enterprise::profile::master::java_args:
-#  'Xmx': '1024m'
-#  'Xms': '1024m'
-#  'XX:+UseG1GC': ''
-#  'XX:HeapDumpPath': '=/var/log/dumps'
-#  'Djruby.reify.classes': '=true'
-  
-#puppet_enterprise::profile::puppetdb::java_args: 
-#  "Xmx": "256m" 
-#  "Xms": "256m"
-
-#puppet_enterprise::profile::orchestrator::java_args:
-#  "Xmx": "256m" 
-#  "Xms": "256m"
 
 #puppet_enterprise::profile::amq::broker::heap_mb: 256
 #puppet_enterprise::profile::amq::broker::memory_usage: '201mb'

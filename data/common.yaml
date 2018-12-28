@@ -3,10 +3,11 @@ message: "Nothing"
 
 #puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
 
-role:
-  -
+puppet_enterprise::profile::master::code_manager_auto_configure: true
+puppet_enterprise::profile::master::r10k_remote: "git@github.com:suckatrash/control-repo.git"
+puppet_enterprise::profile::master::r10k_private_key: "/etc/puppetlabs/puppetserver/ssl/id_rsa"
   
-puppet_enterprise::profile::console::proxy::http_redirect::enable_http_redirect: false
+#puppet_enterprise::profile::console::proxy::http_redirect::enable_http_redirect: false
 
 #test facts blacklist puppetdb
 puppet_enterprise::puppetdb::database_ini::facts_blacklist_type: 'regex'
@@ -29,10 +30,10 @@ puppet_enterprise::puppetdb::database_ini::facts_blacklist:
 #puppet_enterprise::console_services::max_connections_per_route: 7
 #puppet_enterprise::console_services::max_connections_total: 9
 
-puppet_enterprise::master::puppetserver::start_timeout: 301
+#puppet_enterprise::master::puppetserver::start_timeout: 301
 
-puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
-puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
+#puppet_enterprise::trapperkeeper::webserver_settings::ssl_cert: "/opt/puppetlabs/server/data/console-services/certs/public-console.cert.pem"
+#puppet_enterprise::trapperkeeper::webserver_settings::ssl_key: "/opt/puppetlabs/server/data/console-services/certs/public-console.private_key.pem"
 
 #puppet_enterprise::profile::agent::manage_symlinks: true
 #puppet_enterprise::symlinks::manage_symlinks: true
@@ -65,18 +66,18 @@ puppet_enterprise::master::code_manager::sources:
   
 ## puppetdb connection pool and processing thread example 
 ## 2x the PuppetDB command processing threads on the write side and 2x the Puppet Server JRuby pool on the read side.
-puppet_enterprise::puppetdb::read_maximum_pool_size: 20
-puppet_enterprise::puppetdb::write_maximum_pool_size: 20
-puppet_enterprise::puppetdb::command_processing_threads: 3
+#puppet_enterprise::puppetdb::read_maximum_pool_size: 20
+#puppet_enterprise::puppetdb::write_maximum_pool_size: 20
+#puppet_enterprise::puppetdb::command_processing_threads: 3
  
 ## Terrible non-working shellgit hack 
 #puppet_enterprise::master::code_manager::git_settings:
 #  provider: shellgit
 #  private_key: '/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa'
   
-puppet_enterprise::profile::database::shared_preload_libraries: 
-  - pglogical
-  - auto_explain
+#puppet_enterprise::profile::database::shared_preload_libraries: 
+#  - pglogical
+#  - auto_explain
   
 puppet_enterprise::profile::database::shared_buffers: '840MB'
   
@@ -85,7 +86,7 @@ puppet_enterprise::profile::database::shared_buffers: '840MB'
 #  proxy: 'http://proxy.example.com:3228'
 
 ##Code manager tuning
-puppet_enterprise::master::code_manager::deploy_pool_size: 8
+#puppet_enterprise::master::code_manager::deploy_pool_size: 8
 #puppet_enterprise::master::code_manager::timeouts_deploy: 30
 #puppet_enterprise::master::code_manager::timeouts_fetch: 300
 #puppet_enterprise::master::code_manager::timeouts_hook: 30
@@ -96,7 +97,7 @@ puppet_enterprise::master::code_manager::deploy_pool_size: 8
 #puppet_enterprise::master::code_manager::authenticate_webhook: false
 #puppet_enterprise::master::code_manager::invalid_branches: "correct"
 
-puppet_enterprise::profile::console::classifier_synchronization_period: 0
+#puppet_enterprise::profile::console::classifier_synchronization_period: 0
 
 ## possible fix for https://tickets.puppetlabs.com/browse/PE-18235
 #puppet_enterprise::master::file_sync::file_sync_poll_interval: 6
@@ -108,20 +109,20 @@ puppet_enterprise::profile::console::classifier_synchronization_period: 0
 ####various tuning examples
 #puppet_enterprise::master::puppetserver::jruby_max_active_instances: 1
 #puppet_enterprise::master::puppetserver::jruby_borrow_timeout: 10000
-puppet_enterprise::profile::master::java_args:
-  'Xmx': '1024m'
-  'Xms': '1024m'
-  'XX:+UseG1GC': ''
-  'XX:HeapDumpPath': '=/var/log/dumps'
-  'Djruby.reify.classes': '=true'
+#puppet_enterprise::profile::master::java_args:
+#  'Xmx': '1024m'
+#  'Xms': '1024m'
+#  'XX:+UseG1GC': ''
+#  'XX:HeapDumpPath': '=/var/log/dumps'
+#  'Djruby.reify.classes': '=true'
   
-puppet_enterprise::profile::puppetdb::java_args: 
-  "Xmx": "256m" 
-  "Xms": "256m"
+#puppet_enterprise::profile::puppetdb::java_args: 
+#  "Xmx": "256m" 
+#  "Xms": "256m"
 
-puppet_enterprise::profile::orchestrator::java_args:
-  "Xmx": "256m" 
-  "Xms": "256m"
+#puppet_enterprise::profile::orchestrator::java_args:
+#  "Xmx": "256m" 
+#  "Xms": "256m"
 
 #puppet_enterprise::profile::amq::broker::heap_mb: 256
 #puppet_enterprise::profile::amq::broker::memory_usage: '201mb'
@@ -136,8 +137,8 @@ puppet_enterprise::profile::orchestrator::java_args:
 #puppet_enterprise::console_services::service_alert_timeout: 5000
 
 ###workaround for https://tickets.puppetlabs.com/browse/PE-10166
-puppet_enterprise::profile::certificate_authority::client_whitelist:
-  - 192.168.0.15
+#puppet_enterprise::profile::certificate_authority::client_whitelist:
+#  - 192.168.0.15
 #  - agent2.example.com
 #  - 192.168.0.24
 

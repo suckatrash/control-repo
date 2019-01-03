@@ -113,10 +113,11 @@ mod 'legacy_fact_blocker',
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppetlabs-pe_metrics_dashboard.git',
   #:git    => 'git@github.com:suckatrash/puppetlabs-pe_metrics_dashboard.git',
-  :git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
+  :git    => 'git@github.com:puppetlabs/puppetlabs-pe_metrics_dashboard.git',
+  #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
   #:git    => 'https://github.com/npwalker/puppetlabs-pe_metrics_dashboard.git',
-  :branch => 'refactor'
-  #:tag => '1.0.0'
+  #:branch => 'refactor'
+  :tag => '1.0.3'
 
 ###kubernetes###
 

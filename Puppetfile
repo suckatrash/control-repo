@@ -113,7 +113,7 @@ mod 'legacy_fact_blocker',
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
-  :git    => 'git@github.com:puppetlabs/pupppet_metrics_dashboard.git',
+  :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
   #:branch => 'refactor'
   :tag => '1.0.3'

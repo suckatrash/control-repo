@@ -19,8 +19,8 @@ mod 'apache',
 #  :branch => 'docs_experiment'
 
 mod 'puppet_metrics_dashboard',
-  :git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
-  :branch => 'grafana_pw'
+  :git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
+  :branch => 'postgresv3'
 
 mod 'puppet-grafana', '5.0.0'
 

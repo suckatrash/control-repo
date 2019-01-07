@@ -18,7 +18,7 @@ mod 'puppetlabs-java_ks', '1.6.0'
 mod 'puppet-hiera', '3.3.2'
 
 mod 'jriviere-windows_services', '0.0.4'
-mod 'puppetlabs-sqlserver', '2.2.0'
+mod 'puppetlabs-sqlserver', '2.1.0'
 
 ### test monitor requirements
 mod 'puppet-grafana', '5.0.0'

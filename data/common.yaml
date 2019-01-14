@@ -1,6 +1,8 @@
 ---
 message: "Nothing"
 
+accounts::test::password: 'secret123'
+
 #puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
 
 ## Debug kit stuff - don't touch ###

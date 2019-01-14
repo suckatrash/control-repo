@@ -1,4 +1,4 @@
-class accounst::test {
+class accounts::test {
 
   user {'test':
     ensure => present,

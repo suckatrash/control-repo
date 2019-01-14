@@ -1,7 +1,7 @@
 ---
 message: "Nothing"
 
-accounts::test::password: 'secret123_new'
+accounts::test::password: 'secret123_old'
 
 #puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
 

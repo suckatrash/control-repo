@@ -1,7 +1,8 @@
 ---
 message: "Nothing"
 
-#puppet_enterprise::master::code_manager::file_sync_repo_id: "wrench"
+puppet_enterprise::master::code_manager::file_sync_repo_id: "wrench"
+puppet_enterprise::master::code_manager::ssl_listen_post: "433"
 
 #puppet_enterprise::master::puppetserver::jruby_9k_enabled: false
 

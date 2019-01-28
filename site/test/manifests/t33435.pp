@@ -1,5 +1,5 @@
 class test::t33435 (
-  Optional[String] $whatever = undef
+  Optional $whatever = undef
 ){
 
   notice($whatever)

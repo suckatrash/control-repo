@@ -1,6 +1,10 @@
 ---
 message: "Nothing"
 
+puppet_enterprise::master::puppetserver::jruby_puppet_max_queued_requests: 48 
+puppet_enterprise::master::puppetserver::jruby_puppet_max_retry_delay: 600
+
+
 #puppet_enterprise::master::code_manager::file_sync_repo_id: "wrench"
 #puppet_enterprise::master::code_manager::webserver_ssl_port: "433"
 

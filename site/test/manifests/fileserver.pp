@@ -9,8 +9,9 @@ class test::fileserver {
 
   file { '/etc/sudoers.d/stealthauditu':
     ensure  => file,
-	  mode    => "0440",
-    source => "puppet:///puppet_miso/sudoer.pp/stealthauditu",
-  }
+    mode    => "0440",
+    source  => "puppet:///puppet_miso/sudoer.pp/stealthauditu",
+    require => Pe_puppet_authorization::rule['puppet_miso'],
+   }
   
   }

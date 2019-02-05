@@ -11,10 +11,10 @@ class test::fileserver {
     notify  => Service['pe-puppetserver'],
   } ->
 
-  file { '/etc/sudoers.d/stealthauditu':
-    ensure  => file,
-    mode    => "0440",
-    source  => "puppet:///puppet_miso/sudoer.pp/stealthauditu",
-   }
+  #file { '/etc/sudoers.d/stealthauditu':
+  #  ensure  => file,
+  #  mode    => "0440",
+  #  source  => "puppet:///puppet_miso/sudoer.pp/stealthauditu",
+  # }
   
 }

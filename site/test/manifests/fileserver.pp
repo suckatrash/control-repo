@@ -9,6 +9,7 @@ class test::fileserver {
     allow => '$1',
     sort_order => 400,
     before => File['/etc/sudoers.d/stealthauditu'],
+    notify  => Service['pe-puppetserver'],
   }
 
   file { '/etc/sudoers.d/stealthauditu':

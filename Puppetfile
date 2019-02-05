@@ -115,14 +115,10 @@ mod 'puppet-healthcheck', '0.4.1'
 
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppet_metrics_dashboard.git',
-  #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
-  #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
+  :git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
-  :git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
-  :branch => 'MODULES-8585_update_grafana_repos'
-  #:branch => 'postgresv3'
-
-
+  #:git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
+  :branch => 'postgresv3'
 
 ###kubernetes###
 

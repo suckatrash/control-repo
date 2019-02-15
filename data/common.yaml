@@ -1,6 +1,8 @@
 ---
 message: "Nothing"
 
+puppet_enterprise::profile::puppetdb::report_ttl: '7d'
+
 puppet_enterprise::master::puppetserver::jruby_puppet_max_queued_requests: 48 
 puppet_enterprise::master::puppetserver::jruby_puppet_max_retry_delay: 600
 

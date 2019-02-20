@@ -1,6 +1,6 @@
 class test::install_hyperv {
 
-  windowsfeature { 'Hyper-V':
+  windowsfeature { 'Microsoft-Hyper-V':
     ensure => present,
   }
 

@@ -5,6 +5,8 @@ mod 'crayfishx-hiera_http', '3.4.0'
 
 ## Stuff I have in .site requires these:
 mod 'puppet-windowsfeature', '3.2.2'
+mod 'puppetlabs-reboot', '2.1.2'
+
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'echocat-nfs', '1.8.1'
 mod 'puppetlabs-puppet_agent', '1.3.2'

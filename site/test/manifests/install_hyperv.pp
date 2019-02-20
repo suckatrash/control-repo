@@ -4,5 +4,9 @@ class test::install_hyperv {
     ensure => present,
   }
 
+  reboot {'after_RDS_RD_Server':
+    when  => pending,
+    subscribe => Windowsfeature['Hyper-V'],
+  }
 
 }

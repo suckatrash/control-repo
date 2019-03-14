@@ -3,7 +3,7 @@
   "description": "Backs up agent SSLdir, puts agent in noop and points agent at new master",
   "supports_noop": false,
   "parameters": {
-    "NEW_MASTER": {
+    "new_master": {
       "description": "The fqdn of the master to migrate to",
       "type": "String[1]"
     }

@@ -13,6 +13,6 @@ tar czvf ${PUPPET_CONFDIR}sslbackup-$(date +%y%m%d%H%M%SZ).tar.gz ${PUPPET_CONFD
 mv ${PUPPET_CONFDIR}/ssl /tmp
 
 echo "Setting noop and requesting new certificate from ${PT_new_master}"
-"${PUPPET_BIN}/puppet" config set noop=true
-"${PUPPET_BIN}/puppet" config set server=${PT_new_master}
+"${PUPPET_BIN}/puppet" config set noop true
+"${PUPPET_BIN}/puppet" config set server ${PT_new_master}
 "${PUPPET_BIN}/puppet" agent -t

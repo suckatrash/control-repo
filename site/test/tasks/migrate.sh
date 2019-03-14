@@ -6,7 +6,7 @@ declare PT_new_master
 
 PUPPET_CONFDIR='/etc/puppetlabs/puppet'
 PUPPET_BIN='/opt/puppetlabs/puppet/bin'
-OLD_MASTER="${PUPPET_BIN} config print server
+OLD_MASTER="${PUPPET_BIN} config print server"
 
 echo "Backing up existing certificates"
 tar czvf ${PUPPET_CONFDIR}sslbackup-$(date +%y%m%d%H%M%SZ).tar.gz ${PUPPET_CONFDIR}

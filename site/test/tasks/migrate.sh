@@ -12,9 +12,9 @@ DATE="$(date +%y%m%d%H%M%SZ)"
 echo "==========================================="
 echo "Backing up existing certificates and existing puppet.conf"
 echo "==========================================="
-tar czf ${PUPPET_CONFDIR}/sslbackup-${DATE}.tar.gz ${PUPPET_CONFDIR}/ssl
-cp ${PUPPET_CONFDIR}/puppet.conf ${PUPPET_CONFDIR}/puppet.conf.bak-${DATE}
-mv -f ${PUPPET_CONFDIR}/ssl /tmp/ssl-${DATE}
+tar czf ${PUPPET_CONFDIR}/sslbackup-${DATE}.tar.gz ${PUPPET_CONFDIR}/ssl || { echo 'Couldn't archive existing certificates, exiting.' ; exit 1; }
+cp ${PUPPET_CONFDIR}/puppet.conf ${PUPPET_CONFDIR}/puppet.conf.bak-${DATE} { echo 'Couldn't backup existing configuration, exiting.' ; exit 1; }
+mv -f ${PUPPET_CONFDIR}/ssl /tmp/ssl-${DATE} { echo 'Couldn't archive existing certificates, exiting.' ; exit 1; }
 
 echo "==========================================="
 echo "Setting noop and requesting new certificate from ${PT_new_master}"

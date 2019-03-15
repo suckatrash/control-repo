@@ -30,5 +30,6 @@ else
   echo "==========================================="
   mv ${PUPPET_CONFDIR}/puppet.conf.bak-${DATE} ${PUPPET_CONFDIR}/puppet.conf
   rm -rf ${PUPPET_CONFDIR}/ssl
+  rm -rf ${PUPPET_CONFDIR}/sslbackup-${DATE}.tar.gz
   mv /tmp/ssl-${DATE} ${PUPPET_CONFDIR}/ssl
 fi

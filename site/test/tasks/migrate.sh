@@ -10,7 +10,7 @@ OLD_MASTER="${PUPPET_BIN} config print server"
 
 echo "Backing up existing certificates"
 tar czvf ${PUPPET_CONFDIR}sslbackup-$(date +%y%m%d%H%M%SZ).tar.gz ${PUPPET_CONFDIR}
-mv ${PUPPET_CONFDIR}/ssl /tmp
+mv -f ${PUPPET_CONFDIR}/ssl /tmp
 
 echo "Setting noop and requesting new certificate from ${PT_new_master}"
 "${PUPPET_BIN}/puppet" config set noop true

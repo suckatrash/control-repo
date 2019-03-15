@@ -19,7 +19,7 @@ echo "Setting noop and requesting new certificate from ${PT_new_master}"
 "${PUPPET_BIN}/puppet" config set server ${PT_new_master}
 "${PUPPET_BIN}/puppet" agent -t
 
-if [$? == 0] 
+if [$? = 0] 
 then
   echo "Certificate request successful, running puppet again in noop"
   "${PUPPET_BIN}/puppet" agent -t

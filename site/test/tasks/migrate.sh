@@ -9,12 +9,16 @@ PUPPET_BIN='/opt/puppetlabs/puppet/bin'
 OLD_MASTER="${PUPPET_BIN} config print server"
 DATE="$(date +%y%m%d%H%M%SZ)"
 
+echo "==========================================="
 echo "Backing up existing certificates and existing puppet.conf"
-tar czvf ${PUPPET_CONFDIR}/sslbackup-${DATE}.tar.gz ${PUPPET_CONFDIR}/ssl
+echo "==========================================="
+tar czf ${PUPPET_CONFDIR}/sslbackup-${DATE}.tar.gz ${PUPPET_CONFDIR}/ssl
 cp ${PUPPET_CONFDIR}/puppet.conf ${PUPPET_CONFDIR}/puppet.conf.bak-${DATE}
 mv -f ${PUPPET_CONFDIR}/ssl /tmp/ssl-${DATE}
 
+echo "==========================================="
 echo "Setting noop and requesting new certificate from ${PT_new_master}"
+echo "==========================================="
 "${PUPPET_BIN}/puppet" config set noop true
 "${PUPPET_BIN}/puppet" config set server ${PT_new_master}
 

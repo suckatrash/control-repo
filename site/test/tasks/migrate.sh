@@ -21,8 +21,10 @@ echo "Setting noop and requesting new certificate from ${PT_new_master}"
 
 if [$? = 0] 
 then
+  echo "==========================================="
   echo "Certificate request successful, running puppet again in noop"
   "${PUPPET_BIN}/puppet" agent -t
 else
+  echo "==========================================="
   echo "The certificate couldn't be signed by ${PT_new_master}, reverting changes"
 fi

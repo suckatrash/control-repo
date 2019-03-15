@@ -17,9 +17,8 @@ mv -f ${PUPPET_CONFDIR}/ssl /tmp/ssl-${DATE}
 echo "Setting noop and requesting new certificate from ${PT_new_master}"
 "${PUPPET_BIN}/puppet" config set noop true
 "${PUPPET_BIN}/puppet" config set server ${PT_new_master}
-"${PUPPET_BIN}/puppet" agent -t
 
-if [$? = 0] 
+if "${PUPPET_BIN}/puppet" agent -t
 then
   echo "==========================================="
   echo "Certificate request successful, running puppet again in noop"

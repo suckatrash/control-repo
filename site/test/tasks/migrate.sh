@@ -22,8 +22,13 @@ if "${PUPPET_BIN}/puppet" agent -t
 then
   echo "==========================================="
   echo "Certificate request successful, running puppet again in noop"
+  echo "==========================================="
   "${PUPPET_BIN}/puppet" agent -t
 else
   echo "==========================================="
   echo "The certificate couldn't be signed by ${PT_new_master}, reverting changes"
+  echo "==========================================="
+  mv ${PUPPET_CONFDIR}/puppet.conf.bak-${DATE} ${PUPPET_CONFDIR}/puppet.conf
+  rm -rf ${PUPPET_CONFDIR}/ssl
+  mv /tmp/ssl-${DATE} ${PUPPET_CONFDIR}/ssl
 fi

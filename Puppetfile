@@ -124,7 +124,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:branch => 'master'
   #:branch => 'http_conn_validator'
-  :branch => 'file_sync_timing'
+  :branch => 'add_puppetdb_heap'
 
 ###kubernetes###
 

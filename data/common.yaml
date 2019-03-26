@@ -183,4 +183,4 @@ puppet_enterprise::profile::database::additional_pg_hba_rules:
     user: "telegraf"
     address: "127.0.0.1"
     auth_method: "ident"
-    order: "51" dding hba pg rules
+    order: "51"

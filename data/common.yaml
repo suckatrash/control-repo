@@ -178,8 +178,8 @@ puppet_enterprise::profile::database::work_mem: '5MB'
 ##Test additional pg hba rule
 puppet_enterprise::profile::database::additional_pg_hba_rules: 
   local_telegraf_access:
-    type: "host"
-    database:  "postgres"
+    type: "local"
+    database:  "pe-puppetdb"
     user: "telegraf"
     address: "127.0.0.1"
     auth_method: "ident"

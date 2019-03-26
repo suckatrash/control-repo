@@ -181,6 +181,6 @@ puppet_enterprise::profile::database::additional_pg_hba_rules:
     type: "local"
     database:  "pe-puppetdb"
     user: "telegraf"
-    address: "127.0.0.1"
-    auth_method: "ident"
+    address: "localhost"
+    auth_method: "trust"
     order: "51"

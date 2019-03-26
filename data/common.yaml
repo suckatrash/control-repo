@@ -176,6 +176,8 @@ puppet_enterprise::profile::database::work_mem: '5MB'
 #  - 192.168.0.24
 
 ##Test additional pg hba rule
+##This makes the following work run locally:
+## sudo -u pe-postgres /opt/puppetlabs/server/bin/psql -U telegraf pe-puppetdb
 puppet_enterprise::profile::database::additional_pg_hba_rules: 
   local_telegraf_access:
     type: "local"

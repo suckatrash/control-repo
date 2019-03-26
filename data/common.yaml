@@ -179,8 +179,8 @@ puppet_enterprise::profile::database::work_mem: '5MB'
 puppet_enterprise::profile::database::additional_pg_hba_rules: 
   local_telegraf_access:
     type: "local"
-    database:  "all"
-    user: "all"
+    database:  "pe-puppetdb"
+    user: "telegraf"
     address: ""
     auth_method: "trust"
     order: "51"

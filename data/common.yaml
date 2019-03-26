@@ -174,3 +174,13 @@ puppet_enterprise::profile::database::work_mem: '5MB'
 #puppet_enterprise::master::file_sync::whitelisted_certnames:
 #  - agent2.example.com
 #  - 192.168.0.24
+
+##Test additional pg hba rule
+puppet_enterprise::profile::database::additional_pg_hba_rules: 
+  - local_telegraf_access:
+      type: "host"
+      database:  "postgres"
+      user: "telegraf"
+      address: "127.0.0.1"
+      auth_method: "ident"
+      order: "51" dding hba pg rules

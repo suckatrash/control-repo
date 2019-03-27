@@ -2,7 +2,7 @@ class test::nic_team {
 
   include chocolatey
 
-  package { 'PSNetworkingDsc':
+  package { 'NetworkingDsc':
     ensure   => latest,
     provider => 'chocolatey',
     before    => [Dsc['nic_team1'],Dsc['nic_team2']],

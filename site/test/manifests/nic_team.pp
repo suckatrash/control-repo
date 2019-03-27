@@ -4,11 +4,11 @@ class test::nic_team {
     resource_name => 'NetworkTeam',
     module        => 'NetworkingDsc',
     properties    => {
-      Ensure                 => 'present',
-      Name                   => 'Team1 - HyperV',
-      TeamingMode            => 'SwitchIndependent',
-      LoadBalancingAlgorithm => 'HyperVPort',
-      TeamMembers            => ['NIC1', 'NIC2'],
+      ensure                 => 'present',
+      name                   => 'Team1 - HyperV',
+      teamingmode            => 'SwitchIndependent',
+      loadbalancingalgorithm => 'HyperVPort',
+      teammembers            => ['NIC1', 'NIC2'],
     }
   }
   

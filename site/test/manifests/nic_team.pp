@@ -12,7 +12,7 @@ class test::nic_team {
     }
   }
   
-  dsc {'nic_team2:
+  dsc {'nic_team2':
     resource_name => 'NetworkTeam',
     module        => 'NetworkingDsc',
     properties    => {

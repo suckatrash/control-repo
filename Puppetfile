@@ -10,6 +10,7 @@ mod 'puppetlabs-dsc_lite', '1.2.0'
 mod 'puppetlabs-chocolatey', '3.3.0'
 mod 'puppetlabs-powershell', '2.2.0'
 mod 'puppetlabs-registry', '2.1.0'
+mod 'hbuckle-powershellmodule', '2.0.1'
 
 mod 'puppetlabs-ntp', '6.0.0'
 mod 'echocat-nfs', '1.8.1'

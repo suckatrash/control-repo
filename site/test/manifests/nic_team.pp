@@ -45,4 +45,5 @@ class test::nic_team {
       ipaddress => '10.32.22.11/15',
       addressfamily => 'IPV4',
     }
+  }
 }

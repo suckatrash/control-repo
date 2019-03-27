@@ -10,7 +10,7 @@ class test::nic_team {
     ensure   => latest,
     provider => 'windowspowershell',
     source   => 'PSGallery',
-    before   => [Dsc['nic_team1'],Dsc['nic_team2']],
+    before   => [Dsc['nic_team1-HyperV'],Dsc['nic_team2-Vlan22']],
   }
 
   dsc {'nic_team1-HyperV':

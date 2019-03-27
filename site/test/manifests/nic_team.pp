@@ -41,7 +41,17 @@ class test::nic_team {
     resource_name => 'IPAddress',
     module        => 'NetworkingDsc',
     properties    => {
-      ipaddress      => '10.32.22.11',
+      ipaddress      => '10.32.22.11/15',
+      interfacealias => 'Team2 - VLAN 22',
+      addressfamily  => 'IPV4',
+    }
+  }
+  
+  dsc {'set-default-gw-team2':
+    resource_name => 'DefaultGatewayAddress'
+    module        => 'NetworkingDsc'
+    properties    => {
+      address   => '10.32.22.1',
       interfacealias => 'Team2 - VLAN 22',
       addressfamily  => 'IPV4',
     }

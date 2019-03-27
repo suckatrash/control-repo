@@ -48,8 +48,8 @@ class test::nic_team {
   }
   
   dsc {'set-default-gw-team2':
-    resource_name => 'DefaultGatewayAddress'
-    module        => 'NetworkingDsc'
+    resource_name => 'DefaultGatewayAddress',
+    module        => 'NetworkingDsc',
     properties    => {
       address   => '10.32.22.1',
       interfacealias => 'Team2 - VLAN 22',

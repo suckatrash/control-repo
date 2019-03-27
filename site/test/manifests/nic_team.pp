@@ -36,4 +36,13 @@ class test::nic_team {
       teammembers            => ['NIC3', 'NIC4'],
     }
   }
+  
+  dsc {'set-ip-team2':
+    resource_name => 'IPAddress',
+    module        => 'NetworkingDsc',
+    properties    => {
+      ensure    => 'present',
+      ipaddress => '10.32.22.11/15',
+      addressfamily => 'IPV4',
+    }
 }

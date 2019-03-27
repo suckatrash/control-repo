@@ -16,11 +16,11 @@ class test::nic_team {
     resource_name => 'NetworkTeam',
     module        => 'NetworkingDsc',
     properties    => {
-      Ensure                 => 'present',
-      Name                   => 'Team2 - VLAN 22',
-      TeamingMode            => 'SwitchIndependent',
-      LoadBalancingAlgorithm => 'HyperVPort',
-      TeamMembers            => ['NIC3', 'NIC4'],
+      ensure                 => 'present',
+      name                   => 'Team2 - VLAN 22',
+      teamingmode            => 'SwitchIndependent',
+      loadbalancingalgorithm => 'HyperVPort',
+      teammembers            => ['NIC3', 'NIC4'],
     }
   }
 }

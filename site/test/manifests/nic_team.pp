@@ -13,7 +13,7 @@ class test::nic_team {
     before   => [Dsc['nic_team1'],Dsc['nic_team2']],
   }
 
-  dsc {'nic_team1':
+  dsc {'nic_team1-HyperV':
     resource_name => 'NetworkTeam',
     module        => 'NetworkingDsc',
     properties    => {
@@ -25,7 +25,7 @@ class test::nic_team {
     }
   }
   
-  dsc {'nic_team2':
+  dsc {'nic_team2-Vlan22':
     resource_name => 'NetworkTeam',
     module        => 'NetworkingDsc',
     properties    => {

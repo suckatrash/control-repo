@@ -41,7 +41,7 @@ class test::nic_team {
     resource_name => 'IPAddress',
     module        => 'NetworkingDsc',
     properties    => {
-      ipaddress      => '10.32.22.11/15',
+      ipaddress      => '10.32.22.11',
       interfacealias => 'Team2 - VLAN 22',
       addressfamily  => 'IPV4',
     }

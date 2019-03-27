@@ -5,11 +5,9 @@ mod 'crayfishx-hiera_http', '3.4.0'
 
 ## Stuff I have in .site requires these:
 mod 'puppet-windowsfeature', '3.2.2'
+## for infc-18414
 mod 'puppetlabs-reboot', '2.1.2'
 mod 'puppetlabs-dsc_lite', '1.2.0'
-mod 'puppetlabs-chocolatey', '3.3.0'
-mod 'puppetlabs-powershell', '2.2.0'
-mod 'puppetlabs-registry', '2.1.0'
 mod 'hbuckle-powershellmodule', '2.0.1'
 
 mod 'puppetlabs-ntp', '6.0.0'

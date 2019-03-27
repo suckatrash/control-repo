@@ -1,5 +1,6 @@
 class test::nic_team {
 
+  include chocolatey
 
   package { 'NetworkingDsc':
     ensure   => latest,

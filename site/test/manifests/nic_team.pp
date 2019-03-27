@@ -1,8 +1,9 @@
 class test::nic_team {
 
-  exec { 'NetworkTeam-Install':
-    command   => 'Install-Module -Name NetworkingDsc -Force',
-    provider  => 'powershell',
+
+  package { 'NetworkingDsc':
+    ensure   => latest,
+    provider => 'chocolatey',
     before    => [Dsc['nic_team1'],Dsc['nic_team2']],
   }
 

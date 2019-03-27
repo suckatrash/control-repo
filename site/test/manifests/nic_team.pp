@@ -1,6 +1,6 @@
 class test::nic_team {
 
-  pspackage {'Nuget':
+  pspackageprovider {'Nuget':
     ensure   => 'present',
     provider => 'windowspowershell',
     before   => Package['NetworkingDsc'],

@@ -1,9 +1,16 @@
 class test::nic_team {
 
+  pspackage {'Nuget':
+    ensure   => 'present',
+    provider => 'windowspowershell',
+    before   => Package['NetworkingDsc'],
+  }
+
   package { 'NetworkingDsc':
     ensure   => latest,
     provider => 'windowspowershell',
     source   => 'PSGallery',
+    before   => [Dsc['nic_team1'],Dsc['nic_team2']],
   }
 
   dsc {'nic_team1':

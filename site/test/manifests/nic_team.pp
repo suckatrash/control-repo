@@ -1,11 +1,9 @@
 class test::nic_team {
 
-  include chocolatey
-
   package { 'NetworkingDsc':
     ensure   => latest,
-    provider => 'chocolatey',
-    before    => [Dsc['nic_team1'],Dsc['nic_team2']],
+    provider => 'windowspowershell',
+    source   => 'PSGallery',
   }
 
   dsc {'nic_team1':

@@ -127,7 +127,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:branch => 'master'
   #:branch => 'http_conn_validator'
-  :branch => 'update_grafana_version'
+  :branch => 'no_install_on_master'
 
 ###kubernetes###
 

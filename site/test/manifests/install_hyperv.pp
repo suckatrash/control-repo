@@ -2,12 +2,12 @@ class test::install_hyperv {
 
   test::network::windows_team::nic_team { 'nic_team1-HyperV':
     nic_name    => 'Team1 - HyperV',
-    teammembers => ['NIC1', 'NIC2'],
+    teammembers => ['NIC1', 'NIC3'],
   }
 
   test::network::windows_team::nic_team { 'nic_team2-Vlan22':
     nic_name    => 'Team2 - VLAN 22',
-    teammembers => ['NIC3', 'NIC4'],
+    teammembers => ['NIC2', 'NIC4'],
   }
 
   test::network::windows_team::interface { 'set-ip-team2':

@@ -1,12 +1,18 @@
 class test::install_hyperv {
 
-  windowsfeature { 'Hyper-V':
-    ensure => present,
+  test::network::windows_team::nic_team { 'nic_team1-HyperV':
+    nic_name    => 'Team1 - HyperV',
+    teammembers => ['NIC1', 'NIC2'],
   }
 
-  reboot {'after_Hyper_V':
-    when  => pending,
-    subscribe => Windowsfeature['Hyper-V'],
+  test::network::windows_team::nic_team { 'nic_team2-Vlan22':
+    nic_name    => 'Team2 - VLAN 22',
+    teammembers => ['NIC3', 'NIC4'],
+  }
+
+  test::network::windows_team::interface { 'set-ip-team2':
+    ipaddress      => ['10.32.22.11/23'],
+    interfacealias => 'Team2 - VLAN 22',
   }
 
 }

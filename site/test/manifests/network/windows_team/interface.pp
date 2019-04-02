@@ -11,7 +11,7 @@ define test::network::windows_team::interface (
     resource_name => 'IPAddress',
     module        => 'NetworkingDsc',
     properties    => {
-      address        => $ipaddress,
+      ipaddress      => $ipaddress,
       interfacealias => $interfacealias,
       addressfamily  => $addressfamily,
     },

@@ -1,6 +1,6 @@
 define test::network::windows_team::interface (
   Array[String]       $ipaddress,
-  String[1]           $intrfacealias,
+  String[1]           $interfacealias,
   Enum['IPv4','IPv6'] $addressfamily = 'IPv4',
 ){
 

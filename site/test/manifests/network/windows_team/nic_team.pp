@@ -8,7 +8,7 @@ define test::network::windows_team::nic_team (
   Optional[Stdlib::IP::Address]                                              $gw_address = undef,
 ){
 
-  include profile::network::windows_install_dsc_modules
+  include profile::network::windows_team::install_dsc_modules
 
   dsc {$name:
     resource_name => 'NetworkTeam',
@@ -19,7 +19,7 @@ define test::network::windows_team::nic_team (
       loadbalancingalgorithm => $loadbalancingalgorithm,
       teammembers            => $teammembers,
     },
-    require       => Class['profile::network::windows_install_dsc_modules'],
+    require       => Class['profile::network::windows_team::install_dsc_modules'],
   }
 
   if $ipaddress {
@@ -32,7 +32,7 @@ define test::network::windows_team::nic_team (
         interfacealias => $nic_name,
         addressfamily  => $addressfamily,
       },
-      require       => Class['profile::network::windows_install_dsc_modules'],
+      require       => Class['profile::network::windows_team::install_dsc_modules'],
     }
   }
 
@@ -46,7 +46,7 @@ define test::network::windows_team::nic_team (
         interfacealias => $nic_name,
         addressfamily  => $addressfamily,
       },
-      require       => Class['profile::network::windows_install_dsc_modules'],
+      require       => Class['profile::network::windows_team::install_dsc_modules'],
     }
   }
 }

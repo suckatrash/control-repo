@@ -1,13 +1,13 @@
 define test::network::windows_team::interface (
-  Array[String]       $ipaddress,
-  String[1]           $gw_address,
-  String[1]           $interfacealias,
-  Enum['IPv4','IPv6'] $addressfamily = 'IPv4',
+  Array[Stdlib::IP::Address::V4] $ipaddress,
+  Stdlib::IP::Address::V4        $gw_address,
+  String[1]                      $interfacealias,
+  Enum['IPv4','IPv6']            $addressfamily = 'IPv4',
 ){
 
-  include test::network::windows_team::install_dsc_modules
+  include profile::network::windows_install_dsc_modules
 
-  dsc {"$name-ip-address":
+  dsc {"${name}-ip-address":
     resource_name => 'IPAddress',
     module        => 'NetworkingDsc',
     properties    => {
@@ -15,17 +15,17 @@ define test::network::windows_team::interface (
       interfacealias => $interfacealias,
       addressfamily  => $addressfamily,
     },
-    require       => Class['test::network::windows_team::install_dsc_modules'],
+    require       => Class['profile::network::windows_install_dsc_modules'],
   }
 
-  dsc {"$name-default-gw":
+  dsc {"${name}-default-gw":
     resource_name => 'DefaultGatewayAddress',
     module        => 'NetworkingDsc',
     properties    => {
       address        => $gw_address,
       interfacealias => $interfacealias,
       addressfamily  => $addressfamily,
-    }
+    },
+    require       => Class['profile::network::windows_install_dsc_modules'],
   }
-
 }

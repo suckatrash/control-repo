@@ -24,7 +24,7 @@ define test::network::windows_team::nic_team (
 
   if $ipaddress {
 
-    test::network::windows_team::interface { "${name}-interface":
+    test::network::windows_team::interface { "set-ip-${name}":
       ipaddress      => $ipaddress,
       gw_address     => $gw_address,
       interfacealias => $nic_name,

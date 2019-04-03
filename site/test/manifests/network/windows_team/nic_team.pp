@@ -4,8 +4,8 @@ define test::network::windows_team::nic_team (
   Enum['SwitchIndependent','LACP','Static']                                  $teamingmode = 'SwitchIndependent',
   Enum['Dynamic','HyperVPort','IPAddresses','MacAddresses','TransportPorts'] $loadbalancingalgorithm = 'HyperVPort',
   Enum['IPv4','IPv6']                                                        $addressfamily = 'IPv4',
-  Optional[Array[Stdlib::IP::Address]]                                       $ipaddress,
-  Optional[Stdlib::IP::Address]                                              $gw_address,
+  Optional[Array[Stdlib::IP::Address]]                                       $ipaddress = undef,
+  Optional[Stdlib::IP::Address]                                              $gw_address = undef,
 ){
 
   include profile::network::windows_install_dsc_modules

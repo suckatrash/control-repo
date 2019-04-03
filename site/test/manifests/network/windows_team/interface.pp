@@ -5,7 +5,7 @@ define test::network::windows_team::interface (
   Enum['IPv4','IPv6']            $addressfamily = 'IPv4',
 ){
 
-  include profile::network::windows_team::install_dsc_modules
+  include test::network::windows_team::install_dsc_modules
 
   dsc {"${name}-ip-address":
     resource_name => 'IPAddress',
@@ -15,7 +15,7 @@ define test::network::windows_team::interface (
       interfacealias => $interfacealias,
       addressfamily  => $addressfamily,
     },
-    require       => Class['profile::network::windows_team::install_dsc_modules'],
+    require       => Class['test::network::windows_team::install_dsc_modules'],
   }
 
   dsc {"${name}-default-gw":
@@ -26,6 +26,6 @@ define test::network::windows_team::interface (
       interfacealias => $interfacealias,
       addressfamily  => $addressfamily,
     },
-    require       => Class['profile::network::windows_team::install_dsc_modules'],
+    require       => Class['test::network::windows_team::install_dsc_modules'],
   }
 }

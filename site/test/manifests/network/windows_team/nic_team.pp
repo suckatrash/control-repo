@@ -24,29 +24,11 @@ define test::network::windows_team::nic_team (
 
   if $ipaddress {
 
-    dsc {"${name}-ip-address":
-      resource_name => 'IPAddress',
-      module        => 'NetworkingDsc',
-      properties    => {
-        ipaddress      => $ipaddress,
-        interfacealias => $nic_name,
-        addressfamily  => $addressfamily,
-      },
-      require       => Class['test::network::windows_team::install_dsc_modules'],
-    }
-  }
-
-  if $gw_address {
-
-    dsc {"${name}-default-gw":
-      resource_name => 'DefaultGatewayAddress',
-      module        => 'NetworkingDsc',
-      properties    => {
-        address        => $gw_address,
-        interfacealias => $nic_name,
-        addressfamily  => $addressfamily,
-      },
-      require       => Class['test::network::windows_team::install_dsc_modules'],
+    test::network::windows_team::interface { "${name}-interface":
+      ipaddress      => $ipaddress,
+      gw_address     => $gw_address,
+      interfacealias => $nic_name,
+      require        => Dsc[$name],
     }
   }
 }

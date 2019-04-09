@@ -108,6 +108,11 @@ mod 'npwalker-pe_databases',
 
 mod 'puppetlabs-postgresql', '5.2.1'
 
+###### Some tasks!
+mod 'm0dular-ca_extend',
+  :git => 'git@github.com:m0dular/ca_extend.git',
+  :branch => 'master'
+
 mod 'puppetlabs-support_tasks',
   :git   => 'git@github.com:suckatrash/support-tasks.git',
   :branch => 'puppetserver_request_sizes'

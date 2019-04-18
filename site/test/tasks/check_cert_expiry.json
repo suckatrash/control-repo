@@ -1,0 +1,11 @@
+{
+  "puppet_task_version": 1,
+  "description": "Check the expiration on any given x509 certificate",
+  "supports_noop": false,
+  "parameters": {
+    "certificate": {
+      "description": "The certificate on the target to check",
+      "type": "String[1]"
+    }
+  }
+}

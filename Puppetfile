@@ -132,7 +132,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:branch => 'master'
   #:branch => 'http_conn_validator'
-  :branch => 'no_install_on_master'
+  :branch => 'dash_template_update'
 
 ###kubernetes###
 

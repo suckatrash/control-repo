@@ -126,13 +126,14 @@ mod 'puppet-healthcheck', '0.4.1'
 
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppet_metrics_dashboard.git',
-  :git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
+  #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
+  :git     => 'git@github.com:Sharpie/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:branch => 'master'
   #:branch => 'http_conn_validator'
-  :branch => 'release_prep_1_1_15'
+  :branch => 'update-dashboard-templates'
 
 ###kubernetes###
 

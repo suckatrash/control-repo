@@ -30,7 +30,7 @@ mod 'puppetlabs-sqlserver', '2.1.0'
 ### test monitor requirements
 mod 'puppet-grafana', '5.0.0'
 mod 'golja-influxdb', '4.0.0'
-mod 'datacentred-telegraf', '1.4.0'
+mod 'puppet-telegraf', '2.1.0'
 mod "puppetlabs/inifile",     '2.4.0'
 
 mod 'dwerder-graphite'

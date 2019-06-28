@@ -1,6 +1,13 @@
 ---
 message: "Nothing"
 
+telegraf::outputs:
+  - influxdb:
+    - urls: [grafana-test-server]
+    - database: telegraf
+    - username: telegraf
+    - password: riggins
+
 puppet_metrics_dashboard::profile::puppetdb::puppetdb_metrics:
   - name: 'global_command-parse-time'
     url: 'puppetlabs.puppetdb.mq:name=global.command-parse-time'

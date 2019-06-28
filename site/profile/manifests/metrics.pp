@@ -1,5 +1,10 @@
 class profile::metrics {
 
+  puppet_metrics_dashboard::certs { 'telegraf_certs':
+    service => 'telegraf',
+    before  =>  Puppet_metrics_dashboard::Profile::Master::Postgres[$facts['networking']['fqdn']],
+  }
+
   puppet_metrics_dashboard::profile::compiler{ $facts['networking']['fqdn']:
     timeout => '5s',
   }

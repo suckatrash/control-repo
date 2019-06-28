@@ -2,7 +2,7 @@
 message: "Nothing"
 
 telegraf::outputs:
-  - influxdb:
+  influxdb:
     urls: [grafana-test-server]
     database: telegraf
     username: telegraf

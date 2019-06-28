@@ -10,7 +10,7 @@ class profile::metrics {
   }
 
   puppet_metrics_dashboard::profile::master::postgres{ $facts['networking']['fqdn']:
-    query_interval => '10m',
+    query_interval => '20s',
   }
 
 }

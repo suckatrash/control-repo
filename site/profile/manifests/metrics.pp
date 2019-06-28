@@ -5,7 +5,8 @@ class profile::metrics {
   }
 
   puppet_metrics_dashboard::profile::puppetdb{ $facts['networking']['fqdn']:
-    timeout => '5s',
+    timeout          => '5s',
+    puppetdb_metrics => lookup(puppet_metrics_dashboard::profile::puppetdb::puppetdb_metrics)
   }
 
   puppet_metrics_dashboard::profile::master::postgres{ $facts['networking']['fqdn']:

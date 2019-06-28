@@ -1,6 +1,12 @@
 ---
 message: "Nothing"
 
+puppet_metrics_dashboard::profile::puppetdb::puppetdb_metrics:
+  - name: 'global_command-parse-time'
+    url: 'puppetlabs.puppetdb.mq:name=global.command-parse-time'
+  - name: 'global_discarded'
+    url: 'puppetlabs.puppetdb.mq:name=global.discarded'
+
 puppet_enterprise::master::code_manager::post_environment_hooks: 
   - url: 'https://pe-20191nightly-master.puppetdebug.vlan:4433/classifier-api/v1/update-classes'    
     use-client-ssl: true

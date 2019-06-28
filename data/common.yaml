@@ -3,7 +3,7 @@ message: "Nothing"
 
 telegraf::outputs:
   influxdb:
-    urls: [http://grafana-test-server:8086]
+    urls: ['http://grafana-test-server:8086']
     database: telegraf
     username: telegraf
     password: riggins

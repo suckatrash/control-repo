@@ -1,7 +1,5 @@
 class profile::metrics {
 
-  include puppet_metrics_dashboard::params
-
   puppet_metrics_dashboard::profile::compiler{ $facts['networking']['fqdn']:
     timeout => '5s',
   }

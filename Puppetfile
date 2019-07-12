@@ -132,7 +132,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:git     => 'git@github.com:seanmil/puppet_metrics_dashboard.git',
-  :branch => 'v2_release_prep'
+  :branch => 'rework_postgres_access'
   #:branch => 'use_certname'
   #:branch => 'fix/master/puppet_stats_timeout'
 

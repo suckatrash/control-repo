@@ -8,7 +8,7 @@ puppet_enterprise::profile::database::additional_pg_hba_rules:
     user: "test"
     address: "::/0"
     auth_method: "cert"
-    map: "=pe-rbac-pe-rbac-write-map clientcert=1"
+    auth_option: "map=test clientcert=1"
     order: "51"
 
 telegraf::outputs:

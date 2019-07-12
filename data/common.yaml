@@ -5,7 +5,7 @@ puppet_enterprise::profile::database::additional_pg_hba_rules:
   allow_telegraf:
     type: "hostssl"
     database:  "pe-puppetdb"
-    user: "telegraf"
+    user: "test"
     address: "::/0"
     auth_method: "cert"
     map: "=pe-rbac-pe-rbac-write-map clientcert=1"

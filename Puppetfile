@@ -33,17 +33,11 @@ mod 'golja-influxdb', '4.0.0'
 mod 'puppet-telegraf', '2.1.0'
 mod "puppetlabs/inifile",     '2.4.0'
 
-mod 'dwerder-graphite'f
 mod 'stahnma-epel'
 mod 'richardc-datacat'
-mod 'ceritsc-yum'
 mod 'puppetlabs-apache', '1.11.0'
 
-#mod 'puppetlabs-mongodb', '0.17.0'
 mod 'puppetlabs-apt', '6.0.0'
-
-#mod 'puppetlabs-mysql', '3.10.0'
-mod 'puppet-staging', '2.2.0'
 
 mod 'puppetlabs-puppet_metrics_collector',
   :git   => 'git@github.com:suckatrash/puppetlabs-puppet_metrics_collector.git',

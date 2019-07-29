@@ -33,8 +33,7 @@ mod 'golja-influxdb', '4.0.0'
 mod 'puppet-telegraf', '2.1.0'
 mod "puppetlabs/inifile",     '2.4.0'
 
-mod 'dwerder-graphite'
-mod 'elasticsearch-elasticsearch'
+mod 'dwerder-graphite'f
 mod 'stahnma-epel'
 mod 'richardc-datacat'
 mod 'ceritsc-yum'
@@ -65,10 +64,6 @@ mod 'suckatrash-t33043_facter_override',
 mod 'puppetlabs-firewall',
  :git    => 'https://github.com/puppetlabs/puppetlabs-firewall.git',
  :commit => '6b75f01'
-
-mod 'suckatrash-grafanadash',
-  :git => 'https://github.com/suckatrash/puppet-grafanadash.git',
-  :branch => 'dev'
 
 mod 'test_module', 
   :git => 'https://github.com/suckatrash/test_module.git'
@@ -143,5 +138,4 @@ mod 'puppetlabs-kubernetes',
   :git => 'git@github.com:suckatrash/puppetlabs-kubernetes.git',
   :branch => 'issue/fix_function_contidionals'
 mod 'puppet-archive', '3.1.0'
-mod 'puppet-wget', '2.0.0'
 mod 'puppetlabs-translate', '1.1.0'

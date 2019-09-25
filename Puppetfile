@@ -17,8 +17,7 @@ mod 'zack-exports', '0.0.6'
 mod 'puppetlabs-acl', '2.0.0'
 mod 'puppetlabs-transition', '0.1.1'
 mod 'saz-sudo', '4.1.0'
-mod 'puppetlabs-puppet_authorization', '0.2.0'
-mod 'puppetlabs-hocon', '0.9.4'
+mod 'puppelabs-hocon', '0.9.4'
 mod 'puppetlabs-stdlib', '5.1.0'
 mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-java_ks', '1.6.0'
@@ -133,3 +132,10 @@ mod 'puppetlabs-kubernetes',
   :branch => 'issue/fix_function_contidionals'
 mod 'puppet-archive', '3.1.0'
 mod 'puppetlabs-translate', '1.1.0'
+
+mod 'puppetlabs-cd4pe', :latest
+# Requirements for cd4pe
+mod 'puppetlabs-hocon', '1.0.1'
+mod 'puppetlabs-puppet_authorization', '0.5.0'
+mod 'puppetlabs-docker', '3.3.0'
+mod 'puppetlabs-apt', '6.2.1'

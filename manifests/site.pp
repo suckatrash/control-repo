@@ -13,6 +13,7 @@
 
 # Disable filebucket by default for all File resources:
 #http://docs.puppetlabs.com/pe/latest/release_notes.html#filebucket-resource-no-longer-created-by-default
+include(lookup('classes', Array[String], 'unique', []))
 File { backup => false }
 
 # DEFAULT NODE

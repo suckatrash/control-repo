@@ -35,8 +35,6 @@ mod 'stahnma-epel'
 mod 'richardc-datacat'
 mod 'puppetlabs-apache', '1.11.0'
 
-mod 'puppetlabs-apt', '6.0.0'
-
 mod 'puppetlabs-puppet_metrics_collector',
   :git   => 'git@github.com:suckatrash/puppetlabs-puppet_metrics_collector.git',
   :branch => 'add_console_metrics'

@@ -130,7 +130,9 @@ mod 'puppetlabs-kubernetes',
 mod 'puppet-archive', '3.1.0'
 mod 'puppetlabs-translate', '1.1.0'
 
-mod 'puppetlabs-cd4pe', :latest
+mod 'puppetlabs-cd4pe',
+  :git => 'git@github.com:puppetlabs/puppetlabs-cd4pe.git',
+  :branch => 'master'
 # Requirements for cd4pe
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-puppet_authorization', '0.5.0'

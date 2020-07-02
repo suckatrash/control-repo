@@ -9,8 +9,6 @@ class profile::metrics {
     #puppetdb_metrics => lookup(puppet_metrics_dashboard::profile::puppetdb::puppetdb_metrics)
   }
 
-  puppet_metrics_dashboard::profile::master::postgres{ $facts['networking']['fqdn']:
-    query_interval => '20s',
-  }
+  include puppet_metrics_dashboard::profile::master::postgres_access
 
 }

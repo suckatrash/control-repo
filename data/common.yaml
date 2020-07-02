@@ -1,34 +1,11 @@
 ---
 message: "Nothing"
 
-puppet_enterprise::profile::database::additional_pg_hba_rules:
-  allow_telegraf:
-    type: "hostssl"
-    database:  "pe-puppetdb"
-    user: "test"
-    address: "::/0"
-    auth_method: "cert"
-    auth_option: "map=test clientcert=1"
-    order: "51"
-
-telegraf::outputs:
-  influxdb:
-    urls: ['http://grafana-test-server:8086']
-    database: telegraf
-    username: telegraf
-    password: riggins
-
-puppet_metrics_dashboard::profile::puppetdb::puppetdb_metrics:
-  - name: 'global_command-parse-time'
-    url: 'puppetlabs.puppetdb.mq:name=global.command-parse-time'
-  - name: 'global_discarded'
-    url: 'puppetlabs.puppetdb.mq:name=global.discarded'
-
 puppet_enterprise::master::code_manager::post_environment_hooks: 
   - url: 'https://pe-20191nightly-master.puppetdebug.vlan:4433/classifier-api/v1/update-classes'    
     use-client-ssl: true
 
-puppet_enterprise::profile::puppetdb::report_ttl: '7d'
+puppet_enterprise::profile::puppetdb::report_ttl: '2d'
 
 puppet_enterprise::master::puppetserver::jruby_puppet_max_queued_requests: 48 
 puppet_enterprise::master::puppetserver::jruby_puppet_max_retry_delay: 600

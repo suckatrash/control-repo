@@ -26,7 +26,7 @@ mod 'jriviere-windows_services', '0.0.4'
 mod 'puppetlabs-sqlserver', '2.1.0'
 
 ### test monitor requirements
-mod 'puppet-grafana', '5.0.0'
+mod 'puppet-grafana', '6.1.0'
 mod 'golja-influxdb', '4.0.0'
 mod 'puppet-telegraf', '2.1.0'
 mod "puppetlabs/inifile",     '2.4.0'

@@ -186,3 +186,9 @@ puppet_enterprise::profile::database::work_mem: '5MB'
 #    address: ""
 #    auth_method: "trust"
 #    order: "51"
+
+telegraf::outputs:
+  influxdb:
+    - urls:
+        - "http://10.234.2.28:8086"
+      database: 'telegraf'

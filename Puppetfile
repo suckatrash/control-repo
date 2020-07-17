@@ -117,7 +117,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   #:git     => 'git@github.com:seanmil/puppet_metrics_dashboard.git',
-  :branch => 'jruby_borrow_graphs'
+  :branch => 'telegraf_inputs'
   #:branch => 'use_certname'
   #:branch => 'fix/master/puppet_stats_timeout'
 

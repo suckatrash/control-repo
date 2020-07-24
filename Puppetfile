@@ -111,12 +111,10 @@ mod 'puppet-healthcheck', '0.4.1'
 
 mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:jarretlavallee/puppet_metrics_dashboard.git',
-  :git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
+  #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:Sharpie/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
-  #:git    => 'git@github.com:tkishel/puppet_metrics_dashboard.git',
-  #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
-  #:git     => 'git@github.com:seanmil/puppet_metrics_dashboard.git',
+  :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
   :branch => 'master'
   #:branch => 'use_certname'
   #:branch => 'fix/master/puppet_stats_timeout'

@@ -115,7 +115,7 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:Sharpie/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
   :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
-  :ref => 'dba6fc7516201049e3dc6b22fc9ac6c0110b2237'
+  :ref => '1cddab218132a2adb42ec8f4c713e7c911c6176f'
   #:branch => 'use_certname'
   #:branch => 'fix/master/puppet_stats_timeout'
 

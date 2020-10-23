@@ -114,8 +114,10 @@ mod 'puppet_metrics_dashboard',
   #:git    => 'git@github.com:suckatrash/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:Sharpie/puppet_metrics_dashboard.git',
   #:git    => 'git@github.com:genebean/puppet_metrics_dashboard.git',
-  :git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
-  :ref => '1cddab218132a2adb42ec8f4c713e7c911c6176f'
+  :git    => 'git@github.com:Secure-24/puppet_metrics_dashboard.git',
+  :branch => 'multiserver_telegraf_dashboard_support'
+  #:git    => 'git@github.com:puppetlabs/puppet_metrics_dashboard.git',
+  #:ref => '1cddab218132a2adb42ec8f4c713e7c911c6176f'
   #:branch => 'use_certname'
   #:branch => 'fix/master/puppet_stats_timeout'
 
